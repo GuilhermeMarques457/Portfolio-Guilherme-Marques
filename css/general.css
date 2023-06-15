@@ -47,7 +47,7 @@ body {
 
 .grid {
   display: grid;
-  column-gap: 6.4rem;
+  column-gap: 8.4rem;
   row-gap: 9.6rem;
   align-items: center;
   justify-content: center;

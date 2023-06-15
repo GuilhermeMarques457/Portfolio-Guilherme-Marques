@@ -261,12 +261,13 @@ body.modo-claro {
 
 /*Individual slides*/
 
-.image-box-me {
-  width: 100%;
+.img-box-slide {
+  overflow: hidden;
+  height: 70%;
 }
 
-.image-me {
-  width: 100%;
+.image-left {
+  height: 100%;
 }
 
 .img-box-grid-2 {
@@ -275,10 +276,25 @@ body.modo-claro {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  /* -webkit-mask-image: radial-gradient(
+    circle at center,
+    transparent 0%,
+    #080202 0%,
+    #080202 60%,
+    transparent 100%
+  );
+  mask-image: radial-gradient(
+    circle at center,
+    transparent 100%,
+    #080202 0%,
+    #080202 70%,
+    transparent 100%
+  ); */
 }
 
-.img-box-grid-2 img {
-  scale: 0.7;
+.img-profissional-xp {
+  opacity: 1;
+  scale: 0.4;
   height: 100%;
 }
 
