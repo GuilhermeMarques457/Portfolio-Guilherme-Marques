@@ -19,8 +19,12 @@
         />
       </div>
       <div>
-        <span class="btn-navigation navigation-active mg-rg-md">Sobre mim</span>
-        <span class="btn-navigation">Projetos</span>
+        <span
+          class="btn-navigation btn-navigation-about navigation-active mg-rg-md"
+        >
+          Sobre mim
+        </span>
+        <span class="btn-navigation btn-navigation-projects">Projetos</span>
       </div>
       <div class="button-color-theme-box">
         <input type="checkbox" id="theme-toggle" />
@@ -30,11 +34,11 @@
         </label>
       </div>
     </header>
-    <main>
-      <section class="section about-me">
+    <main class="main-container">
+      <section class="section-carrousel about-me-section">
         <div class="box-container">
           <div class="box-slides">
-            <div class="box-slide element-hidden">
+            <div class="box-slide box-slide-about element-hidden">
               <div class="box-slide-content grid grid--2--cols">
                 <div class="img-box-slide flex flex-center">
                   <img src="./imgs/me.png" class="image-left" />
@@ -62,7 +66,7 @@
                 </div>
               </div>
             </div>
-            <div class="box-slide element-hidden">
+            <div class="box-slide box-slide-about element-hidden">
               <div class="box-slide-content grid grid--2--cols">
                 <div class="img-box-habilities">
                   <img
@@ -119,7 +123,7 @@
                 </div>
               </div>
             </div>
-            <div class="box-slide element-hidden">
+            <div class="box-slide box-slide-about element-hidden">
               <div class="box-slide-content grid grid--2--cols">
                 <div class="img-box-slide flex flex-center">
                   <a target="_blank" href="https://www.realthservice.com.br">
@@ -153,7 +157,7 @@
                 </div>
               </div>
             </div>
-            <div class="box-slide element-hidden">
+            <div class="box-slide box-slide-about element-hidden">
               <div class="box-slide-content grid grid--2--cols">
                 <div class="img-box-slide flex flex-center">
                   <img
@@ -186,11 +190,177 @@
             </div>
           </div>
 
-          <button class="btn-right"><i class="ph ph-caret-right"></i></button>
-          <button class="btn-left"><i class="ph ph-caret-left"></i></button>
+          <button class="btn-right btn-right-about">
+            <i class="ph ph-caret-right"></i>
+          </button>
+          <button class="btn-left btn-left-about">
+            <i class="ph ph-caret-left"></i>
+          </button>
         </div>
       </section>
-      <section slot="section habilities"></section>
+      <section class="section projects-section element-hidden">
+        <div class="box-container">
+          <div class="box-slides">
+            <div class="box-slide box-slide-projects element-hidden">
+              <div class="box-slide-content grid grid--2--cols">
+                <div class="img-box-slide flex flex-center">
+                  <img src="./imgs/me.png" class="image-left" />
+                </div>
+                <div class="slide-content flex flex-center">
+                  <div>
+                    <h2 class="secondary-heading">Quem eu sou</h2>
+                    <p class="descriptive-text">
+                      Olá, meu nome é Guilherme, tenho 17 anos e estudo em um
+                      curso técnico de Desenvolvimento de Sistemas na Etec.
+                      Iniciei na área há cerca de um anoe meio e me apaixonei
+                      pela forma de como um software é desenvolvido.
+                    </p>
+                    <p class="descriptive-text">
+                      Eu estava fazendo um curso de JS do básico ao avançado,
+                      pois pretendia atuar na área de Front-end React. No
+                      entanto, como nada acontece como o planejado, surgiu-me
+                      uma oportunidade de fazer manutenção em um sistema Web
+                      integrado com mobile. Para entender melhor o código e
+                      implementar novas funcionalidades, comecei um curso de
+                      Asp.net Core 6, que é a tecnologia usada para desenvolver
+                      esse sistema.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box-slide box-slide-projects element-hidden">
+              <div class="box-slide-content grid grid--2--cols">
+                <div class="img-box-habilities">
+                  <img
+                    src="./imgs/Habilities/cSharp.png"
+                    class="imgs-habilidades"
+                    alt="images-habilidades"
+                  />
+                  <img
+                    src="./imgs/Habilities/aspnet.png"
+                    class="imgs-habilidades"
+                    alt="images-habilidades"
+                  />
+                  <img
+                    src="./imgs/Habilities/git.png"
+                    class="imgs-habilidades"
+                    alt="images-habilidades"
+                  />
+                  <img
+                    src="./imgs/Habilities/html.png"
+                    class="imgs-habilidades"
+                    alt="images-habilidades"
+                  />
+                  <img
+                    src="./imgs/Habilities/css.png"
+                    class="imgs-habilidades"
+                    alt="images-habilidades"
+                  />
+                  <img
+                    src="./imgs/Habilities/js.png"
+                    class="imgs-habilidades"
+                    alt="images-habilidades"
+                  />
+                </div>
+                <div class="slide-content flex flex-center">
+                  <div>
+                    <h2 class="secondary-heading">Habilidades</h2>
+                    <p class="descriptive-text">
+                      Olá, meu nome é Guilherme, tenho 17 anos e estudo em um
+                      curso técnico de Desenvolvimento de Sistemas na Etec.
+                      Iniciei na área há cerca de um anoe meio e me apaixonei
+                      pela forma de como um software é desenvolvido.
+                    </p>
+                    <p class="descriptive-text">
+                      Eu estava fazendo um curso de JS do básico ao avançado,
+                      pois pretendia atuar na área de Front-end React. No
+                      entanto, como nada acontece como o planejado, surgiu-me
+                      uma oportunidade de fazer manutenção em um sistema Web
+                      integrado com mobile. Para entender melhor o código e
+                      implementar novas funcionalidades, comecei um curso de
+                      Asp.net Core 6, que é a tecnologia usada para desenvolver
+                      esse sistema.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box-slide box-slide-projects element-hidden">
+              <div class="box-slide-content grid grid--2--cols">
+                <div class="img-box-slide flex flex-center">
+                  <a target="_blank" href="https://www.realthservice.com.br">
+                    <img
+                      src="./imgs/Expirience/experienciaProfissional.JPG"
+                      class="image-left img-profissional-xp"
+                    />
+                  </a>
+                </div>
+
+                <div class="slide-content flex flex-center">
+                  <div>
+                    <h2 class="secondary-heading">Experiência Profissional</h2>
+                    <p class="descriptive-text">
+                      Olá, meu nome é Guilherme, tenho 17 anos e estudo em um
+                      curso técnico de Desenvolvimento de Sistemas na Etec.
+                      Iniciei na área há cerca de um anoe meio e me apaixonei
+                      pela forma de como um software é desenvolvido.
+                    </p>
+                    <p class="descriptive-text">
+                      Eu estava fazendo um curso de JS do básico ao avançado,
+                      pois pretendia atuar na área de Front-end React. No
+                      entanto, como nada acontece como o planejado, surgiu-me
+                      uma oportunidade de fazer manutenção em um sistema Web
+                      integrado com mobile. Para entender melhor o código e
+                      implementar novas funcionalidades, comecei um curso de
+                      Asp.net Core 6, que é a tecnologia usada para desenvolver
+                      esse sistema.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box-slide box-slide-projects element-hidden">
+              <div class="box-slide-content grid grid--2--cols">
+                <div class="img-box-slide flex flex-center">
+                  <img
+                    src="./imgs/Education/Certificate.svg"
+                    class="image-left"
+                  />
+                </div>
+                <div class="slide-content flex flex-center">
+                  <div>
+                    <h2 class="secondary-heading">Quem eu sou</h2>
+                    <p class="descriptive-text">
+                      Olá, meu nome é Guilherme, tenho 17 anos e estudo em um
+                      curso técnico de Desenvolvimento de Sistemas na Etec.
+                      Iniciei na área há cerca de um anoe meio e me apaixonei
+                      pela forma de como um software é desenvolvido.
+                    </p>
+                    <p class="descriptive-text">
+                      Eu estava fazendo um curso de JS do básico ao avançado,
+                      pois pretendia atuar na área de Front-end React. No
+                      entanto, como nada acontece como o planejado, surgiu-me
+                      uma oportunidade de fazer manutenção em um sistema Web
+                      integrado com mobile. Para entender melhor o código e
+                      implementar novas funcionalidades, comecei um curso de
+                      Asp.net Core 6, que é a tecnologia usada para desenvolver
+                      esse sistema.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="btn-right btn-right-projects">
+            <i class="ph ph-caret-right"></i>
+          </button>
+          <button class="btn-left btn-left-projects">
+            <i class="ph ph-caret-left"></i>
+          </button>
+        </div>
+      </section>
     </main>
     <footer class="footer-container">
       <div class="icon-contact-box">
