@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Bakbak+One&family=Oxanium:wght@400;500;600;700;800&display=swap");
 
 :root {
-  --primary-color: #fce9f1;
+  --primary-color: #73bbc9;
+  --primary-color-lighter: #9dcfd9;
+  --primary-color-darker: #457079;
   --secondary-color: #f1d4e5;
-  --tertiary-color: #d4adfc;
+  --tertiary-color: #fce9f1;
   --dark-color: #080202;
   --white-color: #fefbfc;
   --fonte-principal: Arial, sans-serif;
@@ -188,14 +190,14 @@ body {
   pointer-events: none;
   visibility: hidden;
   scale: 0.2;
-  transition: all 1s;
+  transition: all 0.5s;
 }
 
 .element-showed {
   opacity: 100 !important;
   pointer-events: all !important;
   visibility: visible !important;
-  transition: all 1s;
+  transition: all 0.5s;
   scale: 1;
   z-index: 9;
 }

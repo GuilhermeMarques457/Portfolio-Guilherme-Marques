@@ -12,15 +12,21 @@ const projectsSection = document.querySelector(".projects-section");
 navAbout.addEventListener("click", function () {
   navAbout.classList.add("navigation-active");
   navProjects.classList.remove("navigation-active");
-  aboutSection.classList.remove("element-hidden");
-  projectsSection.classList.add("element-hidden");
+
+  aboutSection.classList.remove("carrousel-hidden");
+  aboutSection.classList.remove("container-left");
+  projectsSection.classList.add("carrousel-hidden");
+  projectsSection.classList.add("container-right");
 });
 
 navProjects.addEventListener("click", function () {
   navAbout.classList.remove("navigation-active");
   navProjects.classList.add("navigation-active");
-  aboutSection.classList.add("element-hidden");
-  projectsSection.classList.remove("element-hidden");
+
+  projectsSection.classList.remove("container-right");
+  projectsSection.classList.remove("carrousel-hidden");
+  aboutSection.classList.add("container-left");
+  aboutSection.classList.add("carrousel-hidden");
 });
 
 //////////////////////////////
