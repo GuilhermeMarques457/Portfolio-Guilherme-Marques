@@ -85,7 +85,7 @@ body.modo-claro {
   height: 20px;
   position: absolute;
   top: 5px;
-  left: 5px;
+  left: 6.5px;
   background: linear-gradient(to right, #211b1b, var(--dark-color));
   border-radius: 50%;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
@@ -207,7 +207,7 @@ body.modo-claro {
 
 .box-slide-content {
   height: 80% !important;
-  width: 60%;
+  width: 80%;
 }
 
 .element-left {
@@ -312,9 +312,20 @@ body.modo-claro {
   overflow: hidden;
 }
 
+.image-link {
+  display: block;
+  height: 100%;
+}
+
 .img-profissional-xp {
-  opacity: 1;
-  scale: 0.4;
+  opacity: 0.8;
+  height: 100%;
+  transition: all 0.4s;
+}
+
+.img-profissional-xp:hover {
+  opacity: 0.9;
+  scale: 1.1;
   height: 100%;
 }
 
@@ -352,12 +363,72 @@ body.modo-claro {
 }
 
 .descriptive-text {
-  font-size: 1.6rem;
-  line-height: 1.4;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
   transition: none !important;
 }
 
 /*end*/
+
+/* Projects section */
+
+.img-project {
+  opacity: 0.8;
+  height: 100%;
+  transition: all 0.4s;
+}
+
+.img-project:hover {
+  opacity: 0.9;
+  scale: 0.7;
+  height: 100%;
+}
+
+.box-used-technologies {
+  height: 3rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.technologies-box {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.img-used-tech {
+  filter: grayscale(1);
+  width: 2.2rem;
+  height: 2.2rem;
+  transition: 0.4s all;
+}
+
+.img-used-tech:hover {
+  cursor: pointer;
+  filter: grayscale(0);
+  width: 2.8rem;
+  height: 2.8rem;
+}
+
+.link-project-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-project-link {
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: var(--primary-color);
+
+  transition: all 0.4s;
+}
+
+.icon-project-link:hover {
+  scale: 1.2;
+  color: var(--primary-color-darker);
+}
 
 /*Footer*/
 
