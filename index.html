@@ -12,7 +12,10 @@
   <body>
     <header class="header-container flex">
       <div class="languages-box">
-        <img src="./imgs/Countries/brazil.png" class="country-img selected" />
+        <img
+          src="./imgs/Countries/brazil.png"
+          class="country-img btn-br selected"
+        />
         <img
           src="./imgs/Countries/united-states.png"
           class="country-img mg-lf-sm btn-eua"
@@ -21,10 +24,13 @@
       <div>
         <span
           class="btn-navigation btn-navigation-about navigation-active mg-rg-md"
+          id="nav_about_me"
         >
           Sobre mim
         </span>
-        <span class="btn-navigation btn-navigation-projects">Projetos</span>
+        <span class="btn-navigation btn-navigation-projects" id="nav_projects"
+          >Projetos</span
+        >
       </div>
       <div class="button-color-theme-box">
         <input type="checkbox" id="theme-toggle" />
@@ -45,22 +51,30 @@
                 </div>
                 <div class="slide-content flex flex-center">
                   <div>
-                    <h2 class="secondary-heading">Quem eu sou</h2>
-                    <p class="descriptive-text">
-                      Olá, meu nome é Guilherme, tenho 17 anos e estudo em um
-                      curso técnico de Desenvolvimento de Sistemas na Etec.
-                      Iniciei na área há cerca de um anoe meio e me apaixonei
-                      pela forma de como um software é desenvolvido.
+                    <h2 class="secondary-heading" id="tittle_who_i_am">
+                      Quem eu sou?
+                    </h2>
+                    <p class="descriptive-text" id="text_about_me_1">
+                      Olá, meu nome é Guilherme e sou um desenvolvedor de
+                      sistemas com um forte desejo de crescimento e aprendizado
+                      contínuo. Com a recente conclusão do curso de
+                      Desenvolvimento de Sistemas na Etec, estou entusiasmado
+                      para começar minha carreira no mundo da tecnologia. Ao
+                      longo dos últimos dois anos, mergulhei de cabeça no campo
+                      da programação, buscando aprimorar minhas habilidades e
+                      conhecimentos.
                     </p>
-                    <p class="descriptive-text">
-                      Eu estava fazendo um curso de JS do básico ao avançado,
-                      pois pretendia atuar na área de Front-end React. No
-                      entanto, como nada acontece como o planejado, surgiu-me
-                      uma oportunidade de fazer manutenção em um sistema Web
-                      integrado com mobile. Para entender melhor o código e
-                      implementar novas funcionalidades, comecei um curso de
-                      Asp.net Core 6, que é a tecnologia usada para desenvolver
-                      esse sistema.
+                    <p class="descriptive-text" id="text_about_me_2">
+                      Como desenvolvedor, possuo uma ampla gama de habilidades,
+                      tanto no front-end quanto no back-end. Minha experiência
+                      em web design e meu domínio de JavaScript me capacitam a
+                      criar interfaces atraentes e interativas para os usuários.
+                      Embora tenha conhecimento avançado em ASP.NET e suas
+                      diversas funcionalidades, meu grande objetivo é me
+                      especializar no desenvolvimento front-end utilizando o
+                      framework React. Acredito que a combinação do meu
+                      conhecimento técnico com minha criatividade me permitirá
+                      criar experiências de usuário excepcionais e dinâmicas.
                     </p>
                   </div>
                 </div>
@@ -102,8 +116,10 @@
                 </div>
                 <div class="slide-content flex flex-center">
                   <div>
-                    <h2 class="secondary-heading">Habilidades</h2>
-                    <p class="descriptive-text">
+                    <h2 class="secondary-heading" id="tittle_habilities">
+                      Habilidades
+                    </h2>
+                    <p class="descriptive-text" id="text_habilities_1">
                       Ao longo da minha trajetória como desenvolvedor, adquiri
                       um conjunto diversificado de habilidades. Inicialmente,
                       meu desejo era me tornar um programador Front-end, e para
@@ -112,7 +128,7 @@
                       Além disso, estou prestes a finalizar um curso de
                       JavaScript, avançando para um framework.
                     </p>
-                    <p class="descriptive-text">
+                    <p class="descriptive-text" id="text_habilities_2">
                       No entanto, como dizem, nem sempre as coisas saem como
                       planejado. Circunstâncias me levaram a me aprofundar no
                       desenvolvimento back-end usando ASP.NET. Isso foi
@@ -146,16 +162,18 @@
 
                 <div class="slide-content flex flex-center">
                   <div>
-                    <h2 class="secondary-heading">Experiência Profissional</h2>
-                    <p class="descriptive-text">
-                      Fico feliz em saber que atualmente estou empregado em uma
-                      empresa onde estou trabalhando com o desenvolvimento de
-                      software utilizando ASP.NET Razor Pages, além de
-                      integração com um aplicativo móvel. Essa oportunidade
-                      surgiu por meio da indicação do meu professor, e desde
-                      então tenho atuado como desenvolvedor nessa empresa.
+                    <h2 class="secondary-heading" id="tittle_xp">
+                      Experiência Profissional
+                    </h2>
+                    <p class="descriptive-text" id="text_xp_1">
+                      Atualmente estou empregado em uma empresa onde estou
+                      trabalhando com o desenvolvimento de software utilizando
+                      ASP.NET Razor Pages, além de integração com um aplicativo
+                      móvel utilizando o flutter. Essa oportunidade surgiu por
+                      meio da indicação do meu professor, e desde então tenho
+                      atuado como desenvolvedor nessa empresa.
                     </p>
-                    <p class="descriptive-text">
+                    <p class="descriptive-text" id="text_xp_2">
                       Na empresa em que trabalho, sou responsável pela
                       manutenção do software e também pela implementação de
                       novas funcionalidades que meu chefe considera
@@ -178,10 +196,10 @@
                 </div>
                 <div class="slide-content flex flex-center">
                   <div>
-                    <h2 class="secondary-heading">
+                    <h2 class="secondary-heading" id="tittle_achievements">
                       Certificações e Conquistas
                     </h2>
-                    <p class="descriptive-text">
+                    <p class="descriptive-text" id="text_achievements">
                       Ao longo da minha trajetória profissional, tive a
                       oportunidade de obter diversos certificados que comprovam
                       minha expertise em diferentes áreas. Cada certificado
@@ -193,6 +211,7 @@
                       Todos esses certificados podem ser encontrados dentro do
                       meu perfil do linkedin.
                     </p>
+
                     <ul class="list">
                       <li class="list-item">
                         <i class="ph ph-certificate list-icon"></i>
@@ -201,6 +220,10 @@
                       <li class="list-item">
                         <i class="ph ph-certificate list-icon"></i>
                         Asp.Net Core 7 (.NET 7) | True Ultimate Guide
+                      </li>
+                      <li class="list-item">
+                        <i class="ph ph-certificate list-icon"></i>
+                        Curso Programação Completo C# - CFB Cursos
                       </li>
                       <li class="list-item">
                         <i class="ph ph-certificate list-icon"></i>
@@ -273,7 +296,7 @@
                       </div>
                     </div>
                     <h2 class="secondary-heading">Omnifood</h2>
-                    <p class="descriptive-text">
+                    <p class="descriptive-text" id="text_project_omnifood">
                       Este projeto foi realizado durante o curso "Build
                       Responsive Real-World Websites with HTML and CSS", e
                       obtive uma série de aprendizados valiosos por meio dele,
@@ -283,7 +306,9 @@
                       desenvolvido no contexto real.
                     </p>
                     <div class="link-project-box mg-tp-bg">
-                      <p class="descriptive-text flex">Codigo disponivel em:</p>
+                      <p class="descriptive-text flex text_code">
+                        Código disponível em:
+                      </p>
                       <a
                         target="_blank"
                         href="https://github.com/GuilhermeMarques457/Omnifood"
@@ -291,6 +316,13 @@
                       >
                         <i class="ph ph-github-logo"></i>
                       </a>
+                    </div>
+                    <div class="descriptive-text mg-tp-md">
+                      Status:
+                      <span class="tag">
+                        <div class="flex flex-center">
+                          Finalizado <i class="ph ph-check"></i></div
+                      ></span>
                     </div>
                   </div>
                 </div>
@@ -302,10 +334,86 @@
                   <a
                     class="image-link"
                     target="_blank"
-                    href="https://marques-omnifood.netlify.app"
+                    href="https://www.realthservice.com.br"
                   >
                     <img
-                      src="./imgs/Projects/projeto-food.JPG"
+                      src="./imgs/Expirience/experienciaProfissional.JPG"
+                      class="image-left img-project"
+                    />
+                  </a>
+                </div>
+
+                <div class="slide-content flex flex-center">
+                  <div>
+                    <div class="box-used-technologies flex mg-bt-md">
+                      <h4 class="subheading">Técnologias:</h4>
+                      <div class="technologies-box flex">
+                        <img
+                          src="/imgs/Habilities/html.png"
+                          class="img-used-tech"
+                          alt="tecnologia usada para fazer o projeto"
+                        />
+                        <img
+                          src="/imgs/Habilities/git.png"
+                          class="img-used-tech"
+                          alt="tecnologia usada para fazer o projeto"
+                        />
+                        <img
+                          src="/imgs/Habilities/css.png"
+                          class="img-used-tech"
+                          alt="tecnologia usada para fazer o projeto"
+                        />
+                        <img
+                          src="/imgs/Habilities/js.png"
+                          class="img-used-tech"
+                          alt="tecnologia usada para fazer o projeto"
+                        />
+                      </div>
+                    </div>
+                    <h2 class="secondary-heading">Realth Service</h2>
+                    <p class="descriptive-text">
+                      Este projeto foi desenvolvido com o objetivo de apresentar
+                      um novo produto. Após analisar minhas habilidades de
+                      design em outros projetos anteriores, meu chefe sugeriu
+                      que criássemos um site semelhante para nossa empresa. O
+                      site segue os mesmos princípios de responsividade e web
+                      design que aprendi em um curso anteriormente mencionado.
+                      Caso tenha interesse em visualizar o código-fonte,
+                      disponibilizei-o no GitHub.
+                    </p>
+                    <div class="link-project-box mg-tp-bg">
+                      <p class="descriptive-text flex text_code">
+                        Código disponível em:
+                      </p>
+                      <a
+                        target="_blank"
+                        href="https://github.com/GuilhermeMarques457/Site-Realth-Service"
+                        class="icon-project-link"
+                      >
+                        <i class="ph ph-github-logo"></i>
+                      </a>
+                    </div>
+                    <div class="descriptive-text mg-tp-md">
+                      Status:
+                      <span class="tag">
+                        <div class="flex flex-center">
+                          Finalizado <i class="ph ph-check"></i></div
+                      ></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box-slide box-slide-projects element-hidden">
+              <div class="box-slide-content grid grid--2--cols">
+                <div class="img-box-slide flex flex-center">
+                  <a
+                    class="image-link"
+                    target="_blank"
+                    href="https://github.com/GuilhermeMarques457/Pokemon-Project"
+                  >
+                    <img
+                      src="./imgs/Projects/projeto-pokemon.JPG"
                       class="image-left img-project"
                     />
                   </a>
@@ -326,32 +434,38 @@
                           class="img-used-tech"
                           alt="tecnologia usada para fazer o projeto"
                         />
-                        <img
-                          src="/imgs/Habilities/js.png"
-                          class="img-used-tech"
-                          alt="tecnologia usada para fazer o projeto"
-                        />
                       </div>
                     </div>
-                    <h2 class="secondary-heading">Omnifood</h2>
+                    <h2 class="secondary-heading">Projeto Pokemon</h2>
                     <p class="descriptive-text">
-                      Este projeto foi executado durante o curso "Build
-                      Responsive Real-World Websites with HTML and CSS", e
-                      obtive uma série de aprendizados valiosos por meio dele,
-                      tais como design de experiência do usuário (UX) e design
-                      de interface (UI), juntamente com outros conceitos
-                      fundamentais, como responsividade e a forma como um site é
-                      desenvolvido no contexto real.
+                      Este projeto marcou o início da minha carreira como
+                      desenvolvedor. Embora eu não acredite mais nas escolhas
+                      que fiz nele, tenho muito orgulho dessa experiência, pois
+                      foi a primeira vez que coloquei em prática os
+                      conhecimentos adquiridos durante meu curso na ETEC. No
+                      entanto, é importante ressaltar que muitas funcionalidades
+                      não estão operacionais, pois decidi interromper o
+                      desenvolvimento do projeto devido a outros compromissos e
+                      projetos em andamento.
                     </p>
                     <div class="link-project-box mg-tp-bg">
-                      <p class="descriptive-text flex">Codigo disponivel em:</p>
+                      <p class="descriptive-text flex text_code">
+                        Código disponível em:
+                      </p>
                       <a
                         target="_blank"
-                        href="https://github.com/GuilhermeMarques457/Omnifood"
+                        href="https://github.com/GuilhermeMarques457/Pokemon-Project"
                         class="icon-project-link"
                       >
                         <i class="ph ph-github-logo"></i>
                       </a>
+                    </div>
+                    <div class="descriptive-text mg-tp-md">
+                      Status:
+                      <span class="tag">
+                        <div class="flex flex-center">
+                          Descontinuado <i class="ph ph-prohibit"></i></div
+                      ></span>
                     </div>
                   </div>
                 </div>
@@ -363,10 +477,10 @@
                   <a
                     class="image-link"
                     target="_blank"
-                    href="https://marques-omnifood.netlify.app"
+                    href="https://www.realthservice.com.br"
                   >
                     <img
-                      src="./imgs/Projects/projeto-food.JPG"
+                      src="./imgs/Projects/projeto-academia.JPG"
                       class="image-left img-project"
                     />
                   </a>
@@ -383,6 +497,11 @@
                           alt="tecnologia usada para fazer o projeto"
                         />
                         <img
+                          src="/imgs/Habilities/git.png"
+                          class="img-used-tech"
+                          alt="tecnologia usada para fazer o projeto"
+                        />
+                        <img
                           src="/imgs/Habilities/css.png"
                           class="img-used-tech"
                           alt="tecnologia usada para fazer o projeto"
@@ -394,25 +513,35 @@
                         />
                       </div>
                     </div>
-                    <h2 class="secondary-heading">Omnifood</h2>
+                    <h2 class="secondary-heading">Marques' Gym</h2>
                     <p class="descriptive-text">
-                      Este projeto foi executado durante o curso "Build
-                      Responsive Real-World Websites with HTML and CSS", e
-                      obtive uma série de aprendizados valiosos por meio dele,
-                      tais como design de experiência do usuário (UX) e design
-                      de interface (UI), juntamente com outros conceitos
-                      fundamentais, como responsividade e a forma como um site é
-                      desenvolvido no contexto real.
+                      Após concluir com êxito o meu curso de WebDesign "Build
+                      Responsive Real-World Websites with HTML and CSS", decidi
+                      colocar em prática todas as habilidades adquiridas.
+                      Animado para testar as minhas novas competências, decidi
+                      aplicar todo o conhecimento adquirido, incluindo os
+                      princípios de responsividade, design e outros aspectos
+                      relevantes, em um projeto simples sobre um tema que
+                      desperta grande interesse em mim: academia.
                     </p>
                     <div class="link-project-box mg-tp-bg">
-                      <p class="descriptive-text flex">Codigo disponivel em:</p>
+                      <p class="descriptive-text flex text_code">
+                        Código disponível em:
+                      </p>
                       <a
                         target="_blank"
-                        href="https://github.com/GuilhermeMarques457/Omnifood"
+                        href="https://github.com/GuilhermeMarques457/Projeto-Academia"
                         class="icon-project-link"
                       >
                         <i class="ph ph-github-logo"></i>
                       </a>
+                    </div>
+                    <div class="descriptive-text mg-tp-md">
+                      Status:
+                      <span class="tag">
+                        <div class="flex flex-center">
+                          Finalizado <i class="ph ph-check"></i></div
+                      ></span>
                     </div>
                   </div>
                 </div>
@@ -503,7 +632,9 @@
                       programar em ASP.NET.
                     </p>
                     <div class="link-project-box mg-tp-bg">
-                      <p class="descriptive-text flex">Codigo disponivel em:</p>
+                      <p class="descriptive-text flex text_code">
+                        Código disponível em:
+                      </p>
                       <a
                         target="_blank"
                         href="https://github.com/GuilhermeMarques457/Tcc-Dev-Code"
@@ -511,6 +642,13 @@
                       >
                         <i class="ph ph-github-logo"></i>
                       </a>
+                    </div>
+                    <div class="descriptive-text mg-tp-md">
+                      Status:
+                      <span class="tag">
+                        <div class="flex flex-center">
+                          Finalizado <i class="ph ph-check"></i></div
+                      ></span>
                     </div>
                   </div>
                 </div>
@@ -564,5 +702,6 @@
       </div>
     </footer>
     <script src="./js/script.js"></script>
+    <script src="./js/translates.js"></script>
   </body>
 </html>

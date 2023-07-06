@@ -76,13 +76,13 @@ body {
 }
 
 .flex {
-  display: flex;
+  display: flex !important;
 }
 
 .flex-center {
   justify-content: center;
   align-items: center;
-  gap: 2.4rem;
+  gap: 1rem;
 }
 
 .flex-center-column {
@@ -145,7 +145,7 @@ body {
 }
 
 .secondary-heading {
-  font-size: 4.4rem;
+  font-size: 4rem;
   margin-bottom: 2.4rem;
   font-weight: 200;
 }
@@ -183,6 +183,13 @@ body {
 }
 
 /* Helper Classes */
+
+.descriptive-text {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  transition: none !important;
+}
 
 .element-hidden {
   opacity: 0;

@@ -11,11 +11,6 @@
 
 /*theme mode*/
 
-body.modo-claro {
-  --dark-color: #fefbfc;
-  --white-color: #080202;
-}
-
 /* Manually adding other colors*/
 
 body.modo-claro .moon-icon {
@@ -34,7 +29,7 @@ body.modo-claro {
 .modo-claro .btn-left {
   background-color: var(--primary-color);
   border: 1px solid var(--primary-color-lighter);
-  color: var(--dark-color);
+  color: var(--white-color);
 }
 
 .modo-claro .btn-right::before,
@@ -48,8 +43,8 @@ body.modo-claro {
   background-color: var(--primary-color-darker);
 }
 
-.modo-escuro .button-color-theme-box .btn-theme .moon-icon {
-  color: var(--white-color) !important;
+.modo-claro .tag {
+  color: var(--dark-color);
 }
 
 /*end*/
@@ -207,6 +202,7 @@ body.modo-claro {
 
 .box-slide-content {
   height: 80% !important;
+  position: relative;
   width: 80%;
 }
 
@@ -298,6 +294,7 @@ body.modo-claro {
 .img-box-slide {
   overflow: hidden;
   height: 70%;
+  position: relative;
 }
 
 .image-left {
@@ -362,13 +359,6 @@ body.modo-claro {
   opacity: 0.5;
 }
 
-.descriptive-text {
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
-  line-height: 1.5;
-  transition: none !important;
-}
-
 /*end*/
 
 /* Projects section */
@@ -428,6 +418,22 @@ body.modo-claro {
 .icon-project-link:hover {
   scale: 1.2;
   color: var(--primary-color-darker);
+}
+
+.tag {
+  font-size: 1.8rem;
+  padding: 0.5rem 2rem;
+  background-color: var(--primary-color-darker);
+  z-index: 999;
+  display: inline-block;
+  margin-left: 1rem;
+  transition: all 0.3s;
+  border-radius: 5px;
+}
+
+.tag:hover {
+  background-color: var(--primary-color);
+  cursor: pointer;
 }
 
 /*Footer*/

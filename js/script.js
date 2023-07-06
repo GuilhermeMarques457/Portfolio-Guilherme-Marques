@@ -58,6 +58,14 @@ const btnLeftAbout = document.querySelector(".btn-left-about");
 
 let slideIndexAbout = 0;
 
+let disableButton1s = function (btn) {
+  btn.disabled = true;
+
+  setTimeout(function () {
+    btn.disabled = false;
+  }, 500);
+};
+
 function updateSlideClassesAbout() {
   slidesAbout.forEach((element) => {
     removeAllClasses(element);
@@ -86,6 +94,8 @@ function updateSlideClassesAbout() {
 }
 
 function nextSlideAbout() {
+  disableButton1s(btnRightAbout);
+
   slideIndexAbout++;
   if (slideIndexAbout >= slidesAbout.length) {
     slideIndexAbout = 0;
@@ -94,6 +104,8 @@ function nextSlideAbout() {
 }
 
 function previousSlideAbout() {
+  disableButton1s(btnLeftAbout);
+
   slideIndexAbout--;
   if (slideIndexAbout < 0) {
     slideIndexAbout = slidesAbout.length - 1;
@@ -147,6 +159,8 @@ function updateSlideClassesProjects() {
 }
 
 function nextSlideProjects() {
+  disableButton1s(btnRightProjects);
+
   slideIndexProjects++;
   if (slideIndexProjects >= slidesProjects.length) {
     slideIndexProjects = 0;
@@ -155,6 +169,8 @@ function nextSlideProjects() {
 }
 
 function previousSlideProjects() {
+  disableButton1s(btnLeftProjects);
+
   slideIndexProjects--;
   if (slideIndexProjects < 0) {
     slideIndexProjects = slidesProjects.length - 1;
@@ -174,9 +190,13 @@ updateSlideClassesProjects();
 //////////////////////////////
 
 const themeToggle = document.getElementById("theme-toggle");
+document.documentElement.style.setProperty("--dark-color", "#080202");
 
 themeToggle.addEventListener("click", function () {
-  if (document.body.classList.contains("modo-claro")) {
+  console.log(document.documentElement.style.getPropertyValue("--dark-color"));
+  if (
+    document.documentElement.style.getPropertyValue("--dark-color") == "#080202"
+  ) {
     ativarModoClaro();
   } else {
     ativarModoNoturno();
@@ -184,11 +204,19 @@ themeToggle.addEventListener("click", function () {
 });
 
 function ativarModoNoturno() {
-  document.body.classList.add("modo-claro");
+  console.log("modo escuro");
+  document.body.classList.remove("modo-claro");
+  document.documentElement.style.setProperty("--dark-color", "#080202");
+  document.documentElement.style.setProperty("--white-color", "#fefbfc");
 }
 
 function ativarModoClaro() {
-  document.body.classList.remove("modo-claro");
+  console.log("modo claro");
+
+  document.body.classList.add("modo-claro");
+
+  document.documentElement.style.setProperty("--dark-color", "#fefbfc");
+  document.documentElement.style.setProperty("--white-color", "#080202");
 }
 
 //End
