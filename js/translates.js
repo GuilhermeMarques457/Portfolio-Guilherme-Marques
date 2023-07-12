@@ -2,6 +2,11 @@ const btnBrasil = document.querySelector(".btn-br");
 const btnEua = document.querySelector(".btn-eua");
 
 const translations_pt = {
+  commom_text_code: "Código disponível em:",
+  commom_status_finished: "Finalizado",
+  commom_status_discontinued: "Descontinuado",
+  commom_status_in_development: "Em desinvolvimento",
+  commom_technology_text: "Técnologias:",
   text_about_me_1:
     "Olá, meu nome é Guilherme e sou um desenvolvedor de sistemas com um forte desejo de crescimento e aprendizado contínuo. Com a recente conclusão do curso de Desenvolvimento de Sistemas na Etec, estou entusiasmado para começar minha carreira no mundo da tecnologia. Ao longo dos últimos dois anos, mergulhei de cabeça no campo da programação, buscando aprimorar minhas habilidades e conhecimentos.",
   text_about_me_2:
@@ -22,9 +27,29 @@ const translations_pt = {
   tittle_achievements: "Certificações e Conquistas",
   text_achievements:
     "Ao longo da minha trajetória profissional, tive aoportunidade de obter diversos certificados que comprovamminha expertise em diferentes áreas. Cada certificadorepresenta um marco importante na minha jornada deaprendizado e demonstra meu comprometimento em meaprimorar constantemente. Compartilho a seguir alguns doscertificados que conquistei, os quais refletem minhadedicação e conhecimento adquiridos ao longo do tempo.Todos esses certificados podem ser encontrados dentro domeu perfil do linkedin.",
+  text_project_omnifood:
+    'Este projeto foi realizado durante o curso "Build Responsive Real-World Websites with HTML and CSS", e obtive uma série de aprendizados valiosos por meio dele, tais como design de experiência do usuário (UX) e design de interface (UI), juntamente com outros conceitos fundamentais, como responsividade e a forma como um site é desenvolvido no contexto real.',
+  text_project_ponto_digital:
+    "Este projeto foi desenvolvido com o objetivo de apresentar um novo produto. Após analisar minhas habilidades de design em outros projetos anteriores, meu chefe sugeriu que criássemos um site semelhante para nossa empresa. O site segue os mesmos princípios de responsividade e web design que aprendi em um curso anteriormente mencionado. Caso tenha interesse em visualizar o código-fonte, disponibilizei-o no GitHub.",
+  text_tittle_project_pokemon: "Projeto Pokemon",
+  text_project_pokemon:
+    "Este projeto marcou o início da minha carreira como desenvolvedor. Embora eu não acredite mais nas escolhas que fiz nele, tenho muito orgulho dessa experiência, pois foi a primeira vez que coloquei em prática os conhecimentos adquiridos durante meu curso na ETEC. No entanto, é importante ressaltar que muitas funcionalidades não estão operacionais, pois decidi interromper o desenvolvimento do projeto devido a outros compromissos e projetos em andamento.",
+  text_project_gym:
+    'Após concluir com êxito o meu curso de WebDesign "Build Responsive Real-World Websites with HTML and CSS", decidi colocar em prática todas as habilidades adquiridas. Animado para testar as minhas novas competências, decidi aplicar todo o conhecimento adquirido, incluindo os princípios de responsividade, design e outros aspectos relevantes, em um projeto simples sobre um tema que desperta grande interesse em mim: academia.',
+  text_project_tcc_1:
+    'Este projeto foi realizado como parte do curso "Desenvolvimento de Sistemas" na Etec Eudecio Luiz Vicente. Ele serviu como nosso Trabalho de Conclusão de Curso (TCC), desenvolvido em conjunto com meus colegas de sala. O mesmo consiste em um forúm para programadores com diversas funcionalidades e sinto extrema satisfação com o resultado desse projeto.',
+  text_project_tcc_2:
+    'Essa experiência foi de extrema importância para mim, pois inicialmente estava bastante ansioso, já que teria que aprender ASP.NET enquanto trabalhava no projeto. Para me preparar, participei do curso "ASP.NET Core 7 (.NET 7) | True Ultimate Guide".',
+  text_project_tcc_3:
+    "A conclusão desse TCC e a realização de diversos outros projetos me proporcionaram uma confiança significativa ao programar em ASP.NET.",
 };
 
 const translations_en = {
+  commom_text_code: "Code available at:",
+  commom_status_finished: "Finished",
+  commom_status_discontinued: "Discontinued",
+  commom_status_in_development: "In development",
+  commom_technology_text: "Technologies:",
   text_about_me_1:
     "Hello, my name is Guilherme, and I'm a systems developer with a strong desire for growth and continuous learning. With the recent completion of the \"Desenvolvimento de Sistemas\" course at Etec, I'm excited to start my career in the world of technology. Over the past two years, I have immersed myself in the field of programming, trying to upgrade my skills and knowledge.",
   text_about_me_2:
@@ -45,41 +70,41 @@ const translations_en = {
   tittle_achievements: "Certificates and Achievements",
   text_achievements:
     "Throughout my professional journey, I have had the opportunity to obtain various certifications that demonstrate my expertise in different areas. Each certificate represents an important part in my learning journey and showcases my commitment to continuously improve myself. I would like to share some of the certificates I have earned, which reflect my dedication and knowledge acquired over time. All these certificates can be found on my LinkedIn profile.",
-};
-
-const translations_pt_general = {
-  text_code: "Código disponível em:",
-};
-
-const translations_en_general = {
-  text_code: "Code available at:",
+  text_project_omnifood: `This project were made during the course "Build Responsive Real-World Websites with HTML and CSS and I've gained a series of valuable learnings through it, such as User Experience (UX) design and User Interface (UI) design, along with other fundamental concepts like responsiveness and how a website is developed in a real-world context.`,
+  text_project_ponto_digital:
+    "This project was developed with the goal of presenting a new product. After analising my design skills from previous projects, my boss suggested creating a similar website for our company. The website follows the same principles of responsiveness and web design that I learned in the previously mentioned course. If you're interested in viewing the source code, I have made it available on GitHub.",
+  text_tittle_project_pokemon: "Pokemon project",
+  text_project_pokemon:
+    "This project marked the beginning of my career as a developer. Although I no longer believe in the choices I made in it, I am very proud of this experience because it was the first time I put into practice the knowledge I've gained during my course at ETEC. However, it's important to note that many features are not functional as I decided to stop the development of the project due to other commitments and in development projects.",
+  text_project_gym: `After successfully completing my WebDesign course, "Build Responsive Real-World Websites with HTML and CSS", I've decided to put all my newest skills into practice. Excited to test my new abilities, I chose to apply all the knowledge I gained, including principles of responsiveness, design, and other relevant aspects, to a simple project on a topic that greatly interests me: a gym or fitness theme.`,
+  text_project_tcc_1:
+    'This project was carried out as part of the "Desenvolvimento de Sistemas" course at Etec Eudecio Luiz Vicente. It served as our final project (TCC), developed in collaboration with my classmates. It consists of a forum for programmers with various functionalities, and I feel extremely satisfied with the final result of this project.',
+  text_project_tcc_2:
+    'This experience was extremely important to me as I initially felt quite anxious about having to learn ASP.NET while working on the project. To prepare myself, I studied in the course "ASP.NET Core 7 (.NET 7) | True Ultimate Guide."',
+  text_project_tcc_3:
+    "The completion of this TCC and the development of several other projects have provided me with significant confidence in programming with ASP.NET.",
 };
 
 function changeLanguage(language) {
   const translations = getTranslations(language);
-  for (const id in translations) {
-    const element = document.getElementById(id);
+  for (const seletor in translations) {
+    const element = document.getElementById(seletor);
 
     if (element) {
-      element.textContent = translations[id];
+      element.textContent = translations[seletor];
+      continue;
+    }
+
+    const elementsArray = document.querySelectorAll("." + seletor);
+
+    if (elementsArray) {
+      elementsArray.forEach((element) => {
+        if (element) {
+          element.textContent = translations[seletor];
+        }
+      });
     }
   }
-}
-
-function changeLanguageCommomText(language) {
-  const translations = getTranslationsRepeated(language);
-  for (const classElement in translations) {
-    const elementsArray = document.querySelectorAll("." + classElement);
-
-    elementsArray.forEach((element) => {
-      element.textContent = translations[classElement];
-    });
-  }
-}
-
-function getTranslationsRepeated(language) {
-  if (language === "en") return translations_en_general;
-  if (language === "pt") return translations_pt_general;
 }
 
 function getTranslations(language) {
@@ -89,17 +114,14 @@ function getTranslations(language) {
 
 btnEua.addEventListener("click", function () {
   changeLanguage("en");
-  changeLanguageCommomText("en");
   btnBrasil.classList.remove("selected");
   btnEua.classList.add("selected");
 });
 
 btnBrasil.addEventListener("click", function () {
   changeLanguage("pt");
-  changeLanguageCommomText("pt");
   btnBrasil.classList.add("selected");
   btnEua.classList.remove("selected");
 });
 
 changeLanguage("pt");
-changeLanguageCommomText("pt");
