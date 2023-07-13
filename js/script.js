@@ -30,7 +30,7 @@ navProjects.addEventListener("click", function () {
 });
 
 //////////////////////////////
-// Carrousell functionality //
+// Carrousell Useful Classes //
 //////////////////////////////
 
 function addRightClasses(slide) {
@@ -45,6 +45,82 @@ function removeAllClasses(slide) {
   slide.classList.remove("element-left", "element-showed", "element-right");
 }
 
+// Drag functionality
+
+let startX;
+let currentIndex = 0;
+
+const calcIndexSlideAbout = (mouseDrag) => {
+  if (mouseDrag > 50) {
+    if (slideIndexAbout == slidesAbout.length - 1) {
+      slideIndexAbout = 0;
+    } else {
+      slideIndexAbout++;
+    }
+  } else if (mouseDrag < -50) {
+    if (slideIndexAbout == 0) {
+      slideIndexAbout = slidesAbout.length - 1;
+    } else {
+      slideIndexAbout--;
+    }
+  }
+
+  updateSlideClassesAbout();
+};
+
+const calcIndexSlideProjects = (mouseDrag) => {
+  if (mouseDrag > 50) {
+    if (slideIndexProjects == slidesProjects.length - 1) {
+      slideIndexProjects = 0;
+    } else {
+      slideIndexProjects++;
+    }
+  } else if (mouseDrag < -50) {
+    if (slideIndexProjects == 0) {
+      slideIndexProjects = slidesProjects.length - 1;
+    } else {
+      slideIndexProjects--;
+    }
+  }
+
+  updateSlideClassesProjects();
+};
+
+let disableDrag = function (boxSlide) {
+  boxSlide.removeEventListener("mousedown", initialPositionMouse);
+  boxSlide.removeEventListener("mouseup", finalPositionMouse);
+
+  setTimeout(function () {
+    boxSlide.addEventListener("mousedown", initialPositionMouse);
+    boxSlide.addEventListener("mouseup", finalPositionMouse);
+  }, 500);
+};
+
+let initialPositionMouse = (e) => {
+  startX = 0;
+  startX = e.pageX;
+};
+
+let finalPositionMouse = (e) => {
+  let endX = 0;
+  let mouseDragDistance = 0;
+
+  endX = e.pageX;
+  mouseDragDistance = endX - startX;
+
+  if (e.currentTarget == boxSlidesAbout) {
+    calcIndexSlideAbout(mouseDragDistance);
+  }
+
+  if (e.currentTarget == boxSlidesProjects) {
+    calcIndexSlideProjects(mouseDragDistance);
+  }
+
+  disableDrag(e.currentTarget);
+};
+
+//End
+
 //End
 
 //////////////////////////////////
@@ -57,6 +133,10 @@ const btnRightAbout = document.querySelector(".btn-right-about");
 const btnLeftAbout = document.querySelector(".btn-left-about");
 
 let slideIndexAbout = 0;
+
+//Drag functionallity
+boxSlidesAbout.addEventListener("mousedown", initialPositionMouse);
+boxSlidesAbout.addEventListener("mouseup", finalPositionMouse);
 
 let disableButton1s = function (btn) {
   btn.disabled = true;
@@ -118,10 +198,8 @@ btnLeftAbout.addEventListener("click", previousSlideAbout);
 
 updateSlideClassesAbout();
 
-//End
-
 //////////////////////////////////
-// Carrousell functionality ABOUT //
+// Carrousell functionality PROJECTS //
 //////////////////////////////////
 
 const boxSlidesProjects = document.querySelector(".box-slides-projects");
@@ -130,6 +208,10 @@ const btnRightProjects = document.querySelector(".btn-right-projects");
 const btnLeftProjects = document.querySelector(".btn-left-projects");
 
 let slideIndexProjects = 0;
+
+//Drag functionallity
+boxSlidesProjects.addEventListener("mousedown", initialPositionMouse);
+boxSlidesProjects.addEventListener("mouseup", finalPositionMouse);
 
 function updateSlideClassesProjects() {
   slidesProjects.forEach((element) => {
@@ -193,7 +275,6 @@ const themeToggle = document.getElementById("theme-toggle");
 document.documentElement.style.setProperty("--dark-color", "#080202");
 
 themeToggle.addEventListener("click", function () {
-  console.log(document.documentElement.style.getPropertyValue("--dark-color"));
   if (
     document.documentElement.style.getPropertyValue("--dark-color") == "#080202"
   ) {
@@ -204,15 +285,12 @@ themeToggle.addEventListener("click", function () {
 });
 
 function ativarModoNoturno() {
-  console.log("modo escuro");
   document.body.classList.remove("modo-claro");
   document.documentElement.style.setProperty("--dark-color", "#080202");
   document.documentElement.style.setProperty("--white-color", "#fefbfc");
 }
 
 function ativarModoClaro() {
-  console.log("modo claro");
-
   document.body.classList.add("modo-claro");
 
   document.documentElement.style.setProperty("--dark-color", "#fefbfc");

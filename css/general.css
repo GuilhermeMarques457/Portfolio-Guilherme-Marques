@@ -79,13 +79,32 @@ body {
   display: flex !important;
 }
 
+.flex-justify-center {
+  justify-content: center;
+}
+
+.flex-align-center {
+  align-items: center;
+}
+
 .flex-center {
   justify-content: center;
   align-items: center;
-  gap: 1rem;
 }
 
-.flex-center-column {
+.gap-sm {
+  gap: 0.6rem;
+}
+
+.gap-md {
+  gap: 1.8rem;
+}
+
+.gap-bg {
+  gap: 3.2rem;
+}
+
+.flex-column {
   flex-direction: column;
 }
 

@@ -42,6 +42,9 @@ const translations_pt = {
     'Essa experiência foi de extrema importância para mim, pois inicialmente estava bastante ansioso, já que teria que aprender ASP.NET enquanto trabalhava no projeto. Para me preparar, participei do curso "ASP.NET Core 7 (.NET 7) | True Ultimate Guide".',
   text_project_tcc_3:
     "A conclusão desse TCC e a realização de diversos outros projetos me proporcionaram uma confiança significativa ao programar em ASP.NET.",
+  text_tittle_project_js: "Projetos em JavaScript",
+  text_project_js:
+    'Aqui estão alguns projetos que realizei durante o meu curso de JavaScript, "The Complete JavaScript Course 2023: From Zero to Expert!" Esses projetos me proporcionaram uma compreensão sólida de conceitos fundamentais, como manipulação do DOM e criação de efeitos visuais frequentemente utilizados em diversos websites.',
 };
 
 const translations_en = {
@@ -83,6 +86,9 @@ const translations_en = {
     'This experience was extremely important to me as I initially felt quite anxious about having to learn ASP.NET while working on the project. To prepare myself, I studied in the course "ASP.NET Core 7 (.NET 7) | True Ultimate Guide."',
   text_project_tcc_3:
     "The completion of this TCC and the development of several other projects have provided me with significant confidence in programming with ASP.NET.",
+  text_tittle_project_js: "JavaScript Projects",
+  text_project_js:
+    'Here are some projects I completed during my JavaScript course, "The Complete JavaScript Course 2023: From Zero to Expert!" These projects provided me with a solid understanding of fundamental concepts, such as DOM manipulation and creating frequently used visual effects on several websites.',
 };
 
 function changeLanguage(language) {
