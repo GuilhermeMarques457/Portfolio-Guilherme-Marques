@@ -19,6 +19,8 @@ const translations_pt = {
     "Ao longo da minha trajetória como desenvolvedor, adquiri um conjunto diversificado de habilidades. Inicialmente, meu desejo era me tornar um programador Front-end, e para perseguir esse objetivo, concluí um curso de web design na Udemy (que você pode encontrar na seção de currículo). Além disso, estou prestes a finalizar um curso de JavaScript, avançando para um framework.",
   text_habilities_2:
     "No entanto, como dizem, nem sempre as coisas saem como planejado. Circunstâncias me levaram a me aprofundar no desenvolvimento back-end usando ASP.NET. Isso foi especialmente relevante para o meu Trabalho de Conclusão de Curso (TCC), que foi desenvolvido em ASP.NET MVC 5, e também para o meu trabalho atual. Recentemente, concluí um curso de ASP.NET 7 e retomei meu curso de JavaScript, pois meu desejo é me tornar um desenvolvedor full stack. Essa ambição reflete meu anseio de combinar minhas habilidades front-end e back-end para criar aplicações abrangentes e dinâmicas.",
+  text_habilities_3:
+    "Vale ressalter que uma das minhas habilidades é o domínio avançado da língua inglesa, uma competência que venho desenvolvendo ao longo de um período significativo de tempo. Durante a pandemia, decidi dedicar-me intensamente a aprimorar meu conhecimento nesse idioma, adquirindo um nível de proficiência avançada, do qual eu possuo muito orgulho.",
   tittle_xp: "Experiência Profissional",
   text_xp_1:
     "Atualmente estou empregado em uma empresa onde estou trabalhando com o desenvolvimento de software utilizando ASP.NET Razor Pages, além de integração com um aplicativo móvel utilizando o flutter. Essa oportunidade surgiu por meio da indicação do meu professor, e desde então tenho atuado como desenvolvedor nessa empresa.",
@@ -45,6 +47,11 @@ const translations_pt = {
   text_tittle_project_js: "Projetos em JavaScript",
   text_project_js:
     'Aqui estão alguns projetos que realizei durante o meu curso de JavaScript, "The Complete JavaScript Course 2023: From Zero to Expert!" Esses projetos me proporcionaram uma compreensão sólida de conceitos fundamentais, como manipulação do DOM e criação de efeitos visuais frequentemente utilizados em diversos websites.',
+  text_tittle_project_aspnet: "Projetos em Asp.Net 7",
+  text_project_aspnet_1:
+    'Aqui estão alguns projetos que desenvolvi durante o meu curso de Asp.Net 7, intitulado "Asp.Net Core 7 (.NET 7) | True Ultimate Guide". Esses projetos representam um conjunto abrangente de funcionalidades que adquiri ao longo do curso.',
+  text_project_aspnet_2:
+    "Durante o curso, adquiri diversas habilidades e apliquei em meus projetos. Isso incluiu programação assíncrona, criação de testes unitários usando xUnit e mocks, utilização de injeção de dependência, definição de contratos para serviços e repositórios, adoção do padrão DTO (Data Transfer Object), implementação do Entity Framework para conexão do banco de dados, integração do Identity, aplicação do padrão Repository, implementação de logging, utilização de filtros e muitas outras funcionalidades.",
 };
 
 const translations_en = {
@@ -65,6 +72,8 @@ const translations_en = {
     "During my journey as a developer, I have acquired a diverse set of skills. Initially, my desire was to become a Front-end programmer, and to get that goal, I completed a web design course on Udemy (which you can find in the curriculum section). Additionally, I am about to finish a JavaScript course, to in future learn a framework.",
   text_habilities_2:
     "However, as they say, things don't always go as planned. Circumstances led me to get into back-end development using ASP.NET. This was particularly relevant for my Final Course Project (TCC in Brasil), which was developed in ASP.NET MVC 5, and also for my current job. Recently, I completed an ASP.NET 7 course and resumed my JavaScript course because my desire is to become a full-stack developer. This ambition reflects my eagerness to combine my front-end and back-end skills to create dynamic applications.",
+  text_habilities_3:
+    "It's worth know that I possess an advanced proficiency in the English language, a skill that I have been developing over a significant period of time. During the pandemic, I dedicated myself intensively to improving my knowledge of the language, resulting in an advanced level of proficiency which I'm really proud of myself.",
   tittle_xp: "Professional experience",
   text_xp_1:
     "Currently, I am employed at a company where I am working on software development using ASP.NET Razor Pages, as well as integrating with a mobile application using Flutter. This opportunity appeared through a recommendation from my professor, and since then, I have been working as a developer at this company.",
@@ -89,6 +98,11 @@ const translations_en = {
   text_tittle_project_js: "JavaScript Projects",
   text_project_js:
     'Here are some projects I completed during my JavaScript course, "The Complete JavaScript Course 2023: From Zero to Expert!" These projects provided me with a solid understanding of fundamental concepts, such as DOM manipulation and creating frequently used visual effects on several websites.',
+  text_tittle_project_aspnet: "Asp.Net 7 Projects",
+  text_project_aspnet_1:
+    'Here are some projects I developed during my Asp.Net 7 course, titled "Asp.Net Core 7 (.NET 7) | True Ultimate Guide". These projects represent a comprehensive set of functionalities that I acquired during the course.',
+  text_project_aspnet_2:
+    "Throught the course, I've learned various skills and applied them in my projects. This included asynchronous programming, creating unit tests using xUnit and mocks, utilizing dependency injection, defining contracts for services and repositories, adopting the DTO (Data Transfer Object) pattern, implementing Entity Framework for database connectivity, integrating Identity, applying the Repository pattern, implementing logging, utilizing filters, and many other functionalities.",
 };
 
 function changeLanguage(language) {
@@ -110,6 +124,14 @@ function changeLanguage(language) {
         }
       });
     }
+  }
+
+  if (navEfect.classList.contains("about")) {
+    navEfect.style.width = `${navAbout.getBoundingClientRect().width}px`;
+  } else if (navEfect.classList.contains("projects")) {
+    navEfect.style.width = `${navProjects.getBoundingClientRect().width}px`;
+  } else {
+    navEfect.style.width = `${navAbout.getBoundingClientRect().width}px`;
   }
 }
 

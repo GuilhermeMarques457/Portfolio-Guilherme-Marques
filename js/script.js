@@ -8,10 +8,13 @@ const navAbout = document.querySelector(".btn-navigation-about");
 const navProjects = document.querySelector(".btn-navigation-projects");
 const aboutSection = document.querySelector(".about-me-section");
 const projectsSection = document.querySelector(".projects-section");
+const navEfect = document.querySelector(".nav-line");
 
-navAbout.addEventListener("click", function () {
-  navAbout.classList.add("navigation-active");
-  navProjects.classList.remove("navigation-active");
+navAbout.addEventListener("click", function (e) {
+  navEfect.classList.add("about");
+  navEfect.classList.remove("projects");
+
+  navEfect.style.width = `${e.currentTarget.getBoundingClientRect().width}px`;
 
   aboutSection.classList.remove("carrousel-hidden");
   aboutSection.classList.remove("container-left");
@@ -19,9 +22,11 @@ navAbout.addEventListener("click", function () {
   projectsSection.classList.add("container-right");
 });
 
-navProjects.addEventListener("click", function () {
-  navAbout.classList.remove("navigation-active");
-  navProjects.classList.add("navigation-active");
+navProjects.addEventListener("click", function (e) {
+  navEfect.classList.add("projects");
+  navEfect.classList.remove("about");
+
+  navEfect.style.width = `${e.currentTarget.getBoundingClientRect().width}px`;
 
   projectsSection.classList.remove("container-right");
   projectsSection.classList.remove("carrousel-hidden");
@@ -198,6 +203,19 @@ btnLeftAbout.addEventListener("click", previousSlideAbout);
 
 updateSlideClassesAbout();
 
+if (!boxSlidesAbout.classList.contains("carrousel-hidden")) {
+  document.addEventListener("keydown", function (e) {
+    switch (e.key) {
+      case "ArrowLeft":
+        previousSlideAbout();
+        break;
+      case "ArrowRight":
+        nextSlideAbout();
+        break;
+    }
+  });
+}
+
 //////////////////////////////////
 // Carrousell functionality PROJECTS //
 //////////////////////////////////
@@ -262,6 +280,19 @@ function previousSlideProjects() {
 
 btnRightProjects.addEventListener("click", nextSlideProjects);
 btnLeftProjects.addEventListener("click", previousSlideProjects);
+
+if (!boxSlidesProjects.classList.contains("carrousel-hidden")) {
+  document.addEventListener("keydown", function (e) {
+    switch (e.key) {
+      case "ArrowLeft":
+        previousSlideProjects();
+        break;
+      case "ArrowRight":
+        nextSlideProjects();
+        break;
+    }
+  });
+}
 
 updateSlideClassesProjects();
 
