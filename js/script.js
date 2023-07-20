@@ -92,38 +92,56 @@ const calcIndexSlideProjects = (mouseDrag) => {
 };
 
 let disableDrag = function (boxSlide) {
-  boxSlide.removeEventListener("mousedown", initialPositionMouse);
-  boxSlide.removeEventListener("mouseup", finalPositionMouse);
+  boxSlide.removeEventListener("mousedown", handleDragStartOrTouchStart);
+  boxSlide.removeEventListener("mouseup", handleDragEndOrTouchEnd);
+  boxSlide.removeEventListener("touchstart", handleDragStartOrTouchStart);
+  boxSlide.removeEventListener("touchend", handleDragEndOrTouchEnd);
 
   setTimeout(function () {
-    boxSlide.addEventListener("mousedown", initialPositionMouse);
-    boxSlide.addEventListener("mouseup", finalPositionMouse);
+    boxSlide.addEventListener("mousedown", handleDragStartOrTouchStart);
+    boxSlide.addEventListener("mouseup", handleDragEndOrTouchEnd);
+    boxSlide.addEventListener("touchstart", handleDragStartOrTouchStart);
+    boxSlide.addEventListener("touchend", handleDragEndOrTouchEnd);
   }, 500);
 };
 
-let initialPositionMouse = (e) => {
-  console.log("sla");
-  startX = 0;
-  startX = e.pageX;
-};
+let startPosition;
 
-let finalPositionMouse = (e) => {
-  let endX = 0;
-  let mouseDragDistance = 0;
+function handleDragStartOrTouchStart(e) {
+  e.preventDefault();
+  e.stopPropagation();
 
-  endX = e.pageX;
-  mouseDragDistance = endX - startX;
+  console.log("entrou");
 
-  if (e.currentTarget == boxSlidesAbout) {
-    calcIndexSlideAbout(mouseDragDistance);
+  const isTouch = e.type.startsWith("touch");
+
+  // Obtém a posição inicial do arraste
+  const startX = isTouch ? e.touches[0].pageX : e.pageX;
+
+  startPosition = startX; // Armazena a posição inicial do arraste
+}
+
+function handleDragEndOrTouchEnd(e) {
+  e.preventDefault();
+  e.stopPropagation();
+
+  const isTouch = e.type.startsWith("touch");
+
+  // Obtém a posição final do arraste
+  const endX = isTouch ? e.changedTouches[0].pageX : e.pageX;
+
+  const dragDistance = endX - startPosition;
+
+  if (e.currentTarget === boxSlidesAbout) {
+    calcIndexSlideAbout(dragDistance);
   }
 
-  if (e.currentTarget == boxSlidesProjects) {
-    calcIndexSlideProjects(mouseDragDistance);
+  if (e.currentTarget === boxSlidesProjects) {
+    calcIndexSlideProjects(dragDistance);
   }
 
   disableDrag(e.currentTarget);
-};
+}
 
 //End
 
@@ -141,11 +159,11 @@ const btnLeftAbout = document.querySelector(".btn-left-about");
 let slideIndexAbout = 0;
 
 //Drag functionallity
-boxSlidesAbout.addEventListener("mousedown", initialPositionMouse);
-boxSlidesAbout.addEventListener("mouseup", finalPositionMouse);
+boxSlidesAbout.addEventListener("mousedown", handleDragStartOrTouchStart);
+boxSlidesAbout.addEventListener("mouseup", handleDragEndOrTouchEnd);
 
-boxSlidesAbout.addEventListener("touchstart", initialPositionMouse);
-boxSlidesAbout.addEventListener("touchend", finalPositionMouse);
+boxSlidesAbout.addEventListener("touchstart", handleDragStartOrTouchStart);
+boxSlidesAbout.addEventListener("touchend", handleDragEndOrTouchEnd);
 
 let disableButton1s = function (btn) {
   btn.disabled = true;
@@ -232,8 +250,11 @@ const btnLeftProjects = document.querySelector(".btn-left-projects");
 let slideIndexProjects = 0;
 
 //Drag functionallity
-boxSlidesProjects.addEventListener("mousedown", initialPositionMouse);
-boxSlidesProjects.addEventListener("mouseup", finalPositionMouse);
+boxSlidesProjects.addEventListener("mousedown", handleDragStartOrTouchStart);
+boxSlidesProjects.addEventListener("mouseup", handleDragEndOrTouchEnd);
+
+boxSlidesProjects.addEventListener("touchstart", handleDragStartOrTouchStart);
+boxSlidesProjects.addEventListener("touchend", handleDragEndOrTouchEnd);
 
 function updateSlideClassesProjects() {
   slidesProjects.forEach((element) => {
