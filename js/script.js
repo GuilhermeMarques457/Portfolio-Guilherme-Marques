@@ -102,6 +102,7 @@ let disableDrag = function (boxSlide) {
 };
 
 let initialPositionMouse = (e) => {
+  console.log("sla");
   startX = 0;
   startX = e.pageX;
 };
@@ -142,6 +143,9 @@ let slideIndexAbout = 0;
 //Drag functionallity
 boxSlidesAbout.addEventListener("mousedown", initialPositionMouse);
 boxSlidesAbout.addEventListener("mouseup", finalPositionMouse);
+
+boxSlidesAbout.addEventListener("touchstart", initialPositionMouse);
+boxSlidesAbout.addEventListener("touchend", finalPositionMouse);
 
 let disableButton1s = function (btn) {
   btn.disabled = true;

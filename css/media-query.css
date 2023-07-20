@@ -1,0 +1,88 @@
+@media (max-width: 94em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (max-width: 84em) {
+  .box-container {
+    width: 100rem;
+  }
+
+  .main-container {
+    width: 100rem;
+  }
+
+  .element-right {
+    scale: 0.35;
+    transform: translateX(110rem);
+  }
+
+  .element-left {
+    scale: 0.35;
+    transform: translateX(-110rem);
+  }
+}
+
+@media (max-width: 69em) {
+  .header-container {
+    width: 90rem;
+  }
+
+  .footer-container {
+    width: 90rem;
+  }
+
+  .grid {
+    row-gap: 5.4rem;
+    column-gap: 4.8rem;
+  }
+
+  .btn-right {
+    right: -5%;
+  }
+
+  .btn-left {
+    left: -5%;
+  }
+}
+
+@media (max-width: 63em) {
+  html {
+    font-size: 50%;
+  }
+
+  .btn-right,
+  .btn-left {
+    width: 6.5rem;
+    height: 6.5rem;
+    font-size: 3rem;
+  }
+
+  .btn-right {
+    right: -3%;
+  }
+
+  .btn-left {
+    left: -3%;
+  }
+
+  .element-right {
+    scale: 0.3;
+  }
+
+  .element-left {
+    scale: 0.3;
+  }
+
+  .sun-icon {
+    left: 5.5rem;
+    top: 1.2rem;
+  }
+
+  .moon-icon {
+    color: var(--white-color);
+    left: 9px;
+    top: 1.2rem;
+  }
+}
