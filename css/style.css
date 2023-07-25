@@ -50,7 +50,8 @@ body.modo-claro {
 /*end*/
 
 .header-container {
-  width: 120rem;
+  max-width: 120rem;
+  padding: 0 3.2rem;
   height: 10vh;
   align-items: center;
   justify-content: space-between;
@@ -198,20 +199,24 @@ body.modo-claro {
 /*All the slides structure*/
 
 .main-container {
+  padding: 0 4.8rem;
+  width: 100%;
   position: relative;
   height: 80vh;
-  width: 120rem;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 
 .section-carrousel {
+  width: 100%;
+  margin: 0 auto;
   transition: all 0.9s;
   position: absolute;
 }
 
 .box-container {
   height: 80vh;
-  width: 120rem;
   display: flex;
   justify-content: center;
   position: relative;
@@ -446,7 +451,7 @@ body.modo-claro {
 }
 
 .icon-project-link {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   text-decoration: none;
   color: var(--primary-color);
 
