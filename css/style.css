@@ -6,7 +6,7 @@
   --tertiary-color: #fce9f1;
   --dark-color: #080202;
   --white-color: #fefbfc;
-  --fonte-principal: Arial, sans-serif;
+  --fonte-principal: "Lexend", sans-serif;
 }
 
 /*theme mode*/
@@ -149,6 +149,7 @@ body.modo-claro {
   display: block;
   height: 2px;
   bottom: -5px;
+  width: 110%;
   background-color: var(--primary-color);
 }
 
@@ -168,7 +169,7 @@ body.modo-claro {
     transform: translateX(-15%);
   }
   100% {
-    transform: translateX(15.1rem);
+    transform: translateX(16rem);
   }
 }
 
@@ -185,7 +186,7 @@ body.modo-claro {
 }
 
 .btn-navigation {
-  font-size: 2.2rem;
+  font-size: 2rem;
   text-transform: uppercase;
   font-weight: 600;
   color: var(--primary-color);
@@ -328,6 +329,10 @@ body.modo-claro {
   scale: 0.9;
 }
 
+.content-habilities {
+  width: 50rem;
+}
+
 /*Individual slides*/
 
 .image-me {
@@ -400,6 +405,17 @@ body.modo-claro {
   height: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
   opacity: 0.5;
+}
+
+.certificate-link {
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.4s all;
+}
+
+.certificate-link:hover {
+  color: var(--primary-color-darker);
+  transform: scale(1.2);
 }
 
 /*end*/
@@ -504,7 +520,6 @@ body.modo-claro {
 .img-alone:hover {
   opacity: 1;
   scale: 1.05;
-  left: 55%;
 }
 
 .img-box-alone {
@@ -579,7 +594,7 @@ body.modo-claro {
 }
 
 .icon-email:hover + .contact-text {
-  width: 26rem !important;
+  width: 27.5rem !important;
 }
 
 .icon-whats:hover + .contact-text {
@@ -587,7 +602,7 @@ body.modo-claro {
 }
 
 .icon-linkedin:hover + .contact-text {
-  width: 12rem !important;
+  width: 12.5rem !important;
 }
 
 /*end*/

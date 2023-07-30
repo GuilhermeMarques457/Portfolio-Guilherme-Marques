@@ -164,9 +164,9 @@ body {
 }
 
 .secondary-heading {
-  font-size: 4rem;
+  font-size: 3.6rem;
   margin-bottom: 2.4rem;
-  font-weight: 200;
+  font-weight: 500;
 }
 
 .heading-tertiary {
@@ -205,7 +205,7 @@ body {
 
 .descriptive-text {
   margin-bottom: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   line-height: 1.5;
   transition: none !important;
 }

@@ -68,6 +68,8 @@ const calcIndexSlideAbout = (mouseDrag) => {
     } else {
       slideIndexAbout--;
     }
+  } else {
+    return "failed";
   }
 
   updateSlideClassesAbout();
@@ -86,6 +88,8 @@ const calcIndexSlideProjects = (mouseDrag) => {
     } else {
       slideIndexProjects--;
     }
+  } else {
+    return "failed";
   }
 
   updateSlideClassesProjects();
@@ -98,21 +102,24 @@ let disableDrag = function (boxSlide) {
   boxSlide.removeEventListener("touchend", handleDragEndOrTouchEnd);
 
   setTimeout(function () {
-    boxSlide.addEventListener("mousedown", handleDragStartOrTouchStart);
-    boxSlide.addEventListener("mouseup", handleDragEndOrTouchEnd);
-    boxSlide.addEventListener("touchstart", handleDragStartOrTouchStart);
-    boxSlide.addEventListener("touchend", handleDragEndOrTouchEnd);
+    boxSlide.addEventListener("mousedown", handleDragStartOrTouchStart, {
+      passive: true,
+    });
+    boxSlide.addEventListener("mouseup", handleDragEndOrTouchEnd, {
+      passive: true,
+    });
+    boxSlide.addEventListener("touchstart", handleDragStartOrTouchStart, {
+      passive: true,
+    });
+    boxSlide.addEventListener("touchend", handleDragEndOrTouchEnd, {
+      passive: true,
+    });
   }, 500);
 };
 
 let startPosition;
 
 function handleDragStartOrTouchStart(e) {
-  e.preventDefault();
-  e.stopPropagation();
-
-  console.log("entrou");
-
   const isTouch = e.type.startsWith("touch");
 
   // Obtém a posição inicial do arraste
@@ -122,9 +129,6 @@ function handleDragStartOrTouchStart(e) {
 }
 
 function handleDragEndOrTouchEnd(e) {
-  e.preventDefault();
-  e.stopPropagation();
-
   const isTouch = e.type.startsWith("touch");
 
   // Obtém a posição final do arraste
@@ -133,17 +137,23 @@ function handleDragEndOrTouchEnd(e) {
   const dragDistance = endX - startPosition;
 
   if (e.currentTarget === boxSlidesAbout) {
-    calcIndexSlideAbout(dragDistance);
+    const status = calcIndexSlideAbout(dragDistance);
+
+    if (status === "failed") {
+      return;
+    }
   }
 
   if (e.currentTarget === boxSlidesProjects) {
-    calcIndexSlideProjects(dragDistance);
+    const status = calcIndexSlideProjects(dragDistance);
+
+    if (status === "failed") {
+      return;
+    }
   }
 
   disableDrag(e.currentTarget);
 }
-
-//End
 
 //End
 

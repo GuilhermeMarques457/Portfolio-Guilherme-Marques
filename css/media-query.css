@@ -10,6 +10,14 @@
   .btn-left {
     left: -3%;
   }
+
+  .sun-icon {
+    top: 1rem;
+  }
+
+  .moon-icon {
+    top: 1rem;
+  }
 }
 
 @media (max-width: 84em) {
@@ -39,6 +47,16 @@
   }
   .box-slide {
     margin: 0;
+  }
+
+  .sun-icon {
+    left: 4.7rem;
+    top: 1rem;
+  }
+
+  .moon-icon {
+    left: 9px;
+    top: 1rem;
   }
 }
 
@@ -80,10 +98,6 @@
 
   .secondary-heading {
     text-align: center;
-  }
-
-  .list {
-    align-items: center;
   }
 
   .descriptive-text {

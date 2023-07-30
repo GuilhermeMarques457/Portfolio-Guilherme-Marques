@@ -4,12 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portifólio</title>
+    <meta
+      name="description"
+      content="Esta pagina é um breve Portifólio sobre quem eu sou, quais são as minhas habilidades e quais projetos eu construi ao longo da minha carreira como programador"
+    />
+    <link rel="shortcut icon" type="image/png" href="/imgs/favicon.png" />
     <link rel="stylesheet" href="./css/general.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/media-query.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <script defer src="./js/script.js"></script>
     <script defer src="./js/translates.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="header-container container flex">
@@ -17,10 +28,12 @@
         <img
           src="./imgs/Countries/brazil.png"
           class="country-img btn-br selected"
+          alt="Imagem do Pais Brasil"
         />
         <img
           src="./imgs/Countries/united-states.png"
           class="country-img mg-lf-sm btn-eua"
+          alt="Imagem do Pais Estados Unidos"
         />
       </div>
       <div class="navigation-box flex">
@@ -50,7 +63,11 @@
             <div class="box-slide box-slide-about element-hidden">
               <div class="box-slide-content grid grid--2--cols">
                 <div class="img-box-slide flex flex-center">
-                  <img src="./imgs/me.svg" class="image-left image-me" />
+                  <img
+                    src="./imgs/me.svg"
+                    alt="descreptive image"
+                    class="image-left image-me"
+                  />
                 </div>
                 <div class="slide-content flex flex-center">
                   <div>
@@ -117,7 +134,7 @@
                     alt="images-habilidades"
                   />
                 </div>
-                <div class="slide-content flex flex-center">
+                <div class="slide-content flex flex-center content-habilities">
                   <div>
                     <h2 class="secondary-heading" id="tittle_habilities">
                       Habilidades
@@ -162,11 +179,13 @@
                   <a
                     class="image-link"
                     target="_blank"
+                    aria-label="Visualizar detalhes"
                     href="https://www.realthservice.com.br"
                   >
                     <img
                       src="./imgs/Expirience/experienciaProfissional.JPG"
                       class="image-left img-profissional-xp"
+                      alt="site expirience image"
                     />
                   </a>
                 </div>
@@ -203,6 +222,7 @@
                   <img
                     src="./imgs/Education/Certificate.svg"
                     class="image-left"
+                    alt="descreptive image"
                   />
                 </div>
                 <div class="slide-content flex flex-center">
@@ -225,28 +245,55 @@
 
                     <ul class="list">
                       <li class="list-item">
-                        <i class="ph ph-certificate list-icon"></i>
+                        <a class="certificate-link">
+                          <i class="ph ph-certificate list-icon"></i>
+                        </a>
+
                         Desenvolvimento de Sistemas - Etec Eudecio Luiz Vicente
                       </li>
                       <li class="list-item">
-                        <i class="ph ph-certificate list-icon"></i>
+                        <a class="certificate-link">
+                          <i class="ph ph-certificate list-icon"></i>
+                        </a>
+
                         Asp.Net Core 7 (.NET 7) | True Ultimate Guide
                       </li>
                       <li class="list-item">
-                        <i class="ph ph-certificate list-icon"></i>
+                        <a
+                          href="https://www.youtube.com/watch?v=dVzJ3bx68FA&list=PLx4x_zx8csUglgKTmgfVFEhWWBQCasNGi"
+                          target="_blank"
+                          class="certificate-link"
+                        >
+                          <i class="ph ph-certificate list-icon"></i>
+                        </a>
                         Curso Programação Completo C# - CFB Cursos
                       </li>
                       <li class="list-item">
-                        <i class="ph ph-certificate list-icon"></i>
+                        <a
+                          href="./imgs/Certificates/Git hub certificado.pdf"
+                          download
+                          class="certificate-link"
+                        >
+                          <i class="ph ph-certificate list-icon"></i>
+                        </a>
                         The Git & Github Bootcamp
                       </li>
                       <li class="list-item">
-                        <i class="ph ph-certificate list-icon"></i>
+                        <a class="certificate-link">
+                          <i class="ph ph-certificate list-icon"></i>
+                        </a>
+
                         The Complete JavaScript Course 2023: From Zero to
                         Expert!
                       </li>
                       <li class="list-item">
-                        <i class="ph ph-certificate list-icon"></i>
+                        <a
+                          href="./imgs/Certificates/WebDesign.pdf"
+                          class="certificate-link"
+                          download
+                        >
+                          <i class="ph ph-certificate list-icon"></i>
+                        </a>
                         Build Responsive Real-World Websites with HTML and CSS
                       </li>
                     </ul>
@@ -256,10 +303,16 @@
             </div>
           </div>
 
-          <button class="btn-right btn-right-about">
+          <button
+            class="btn-right btn-right-about"
+            aria-label="Mover Carrousel para direira"
+          >
             <i class="ph ph-caret-right"></i>
           </button>
-          <button class="btn-left btn-left-about">
+          <button
+            class="btn-left btn-left-about"
+            aria-label="Mover Carrousel para esquerda"
+          >
             <i class="ph ph-caret-left"></i>
           </button>
         </div>
@@ -275,6 +328,7 @@
                   <a
                     class="image-link"
                     target="_blank"
+                    aria-label="Visualizar detalhes"
                     href="https://marques-omnifood.netlify.app"
                   >
                     <img
@@ -325,6 +379,7 @@
                       </p>
                       <a
                         target="_blank"
+                        aria-label="Visualizar detalhes"
                         href="https://github.com/GuilhermeMarques457/Omnifood"
                         class="icon-project-link"
                       >
@@ -350,11 +405,13 @@
                   <a
                     class="image-link"
                     target="_blank"
+                    aria-label="Visualizar detalhes"
                     href="https://www.realthservice.com.br"
                   >
                     <img
                       src="./imgs/Expirience/experienciaProfissional.JPG"
                       class="image-left img-project"
+                      alt="Imagem do projeto"
                     />
                   </a>
                 </div>
@@ -405,6 +462,7 @@
                       </p>
                       <a
                         target="_blank"
+                        aria-label="Visualizar detalhes"
                         href="https://github.com/GuilhermeMarques457/Site-Realth-Service"
                         class="icon-project-link"
                       >
@@ -430,6 +488,7 @@
                   <a
                     class="image-link"
                     target="_blank"
+                    aria-label="Visualizar detalhes"
                     href="https://github.com/GuilhermeMarques457/Pokemon-Project"
                   >
                     <img
@@ -482,6 +541,7 @@
                       </p>
                       <a
                         target="_blank"
+                        aria-label="Visualizar detalhes"
                         href="https://github.com/GuilhermeMarques457/Pokemon-Project"
                         class="icon-project-link"
                       >
@@ -509,6 +569,7 @@
                   <a
                     class="image-link"
                     target="_blank"
+                    aria-label="Visualizar detalhes"
                     href="https://marques-minimalist-gym.netlify.app"
                   >
                     <img
@@ -565,6 +626,7 @@
                       </p>
                       <a
                         target="_blank"
+                        aria-label="Visualizar detalhes"
                         href="https://github.com/GuilhermeMarques457/Projeto-Academia"
                         class="icon-project-link"
                       >
@@ -591,6 +653,7 @@
                     <a
                       class="image-link-twin"
                       target="_blank"
+                      aria-label="Visualizar detalhes"
                       href="https://marques-guess-my-number.netlify.app"
                     >
                       <img
@@ -602,6 +665,7 @@
                     <a
                       class="image-link-twin"
                       target="_blank"
+                      aria-label="Visualizar detalhes"
                       href="https://marques-pig-game.netlify.app"
                     >
                       <img
@@ -615,6 +679,7 @@
                     <a
                       class="image-link-alone"
                       target="_blank"
+                      aria-label="Visualizar detalhes"
                       href="https://marques-bankist.netlify.app"
                     >
                       <img
@@ -657,6 +722,7 @@
                       </p>
                       <a
                         target="_blank"
+                        aria-label="Visualizar detalhes"
                         href="https://github.com/GuilhermeMarques457/js-projects"
                         class="icon-project-link"
                       >
@@ -685,10 +751,11 @@
                     <a
                       class="image-link-alone"
                       target="_blank"
-                      href="https://github.com/GuilhermeMarques457/aspnet7-projects/tree/master/SampleApplicationCRUD/SampleApplicationCRUD"
+                      aria-label="Visualizar detalhes"
+                      href="https://github.com/GuilhermeMarques457/aspnet7-projects/tree/master/ContactsManagerSolution"
                     >
                       <img
-                        src="./imgs/Projects/js-projects/project-js-bankist.JPG"
+                        src="./imgs/Projects/.net-projects/projeto-.net-contacts.jpg"
                         class="img-alone"
                         alt="imagem do projeto"
                       />
@@ -698,10 +765,11 @@
                     <a
                       class="image-link-alone"
                       target="_blank"
+                      aria-label="Visualizar detalhes"
                       href="https://github.com/GuilhermeMarques457/aspnet7-projects/tree/master/StocksApp"
                     >
                       <img
-                        src="./imgs/Projects/js-projects/project-js-bankist.JPG"
+                        src="./imgs/Projects/.net-projects/projeto-.net-stocks.jpg"
                         class="img-alone"
                         alt="imagem do projeto"
                       />
@@ -779,6 +847,7 @@
                       </p>
                       <a
                         target="_blank"
+                        aria-label="Visualizar detalhes"
                         href="https://github.com/GuilhermeMarques457/aspnet7-projects"
                         class="icon-project-link"
                       >
@@ -806,6 +875,7 @@
                   <a
                     class="image-link"
                     target="_blank"
+                    aria-label="Visualizar detalhes"
                     href="https://www.devcodebr.com.br"
                   >
                     <img
@@ -893,6 +963,7 @@
                       </p>
                       <a
                         target="_blank"
+                        aria-label="Visualizar detalhes"
                         href="https://github.com/GuilhermeMarques457/Tcc-Dev-Code"
                         class="icon-project-link"
                       >
@@ -914,10 +985,16 @@
             </div>
           </div>
 
-          <button class="btn-right btn-right-projects">
+          <button
+            class="btn-right btn-right-projects"
+            aria-label="Mover Carrousel para direira"
+          >
             <i class="ph ph-caret-right"></i>
           </button>
-          <button class="btn-left btn-left-projects">
+          <button
+            class="btn-left btn-left-projects"
+            aria-label="Mover Carrousel para direira"
+          >
             <i class="ph ph-caret-left"></i>
           </button>
         </div>
@@ -938,6 +1015,7 @@
         <div class="box-contact-item flex">
           <a
             target="_blank"
+            aria-label="Visualizar detalhes"
             href="https://www.linkedin.com/in/guilherme-marques-88325b24a/"
             class="icon-contact icon-linkedin"
           >
@@ -949,6 +1027,7 @@
         <div class="box-contact-item flex">
           <a
             target="_blank"
+            aria-label="Visualizar detalhes"
             href="https://github.com/GuilhermeMarques457"
             class="icon-contact icon-linkedin"
           >
