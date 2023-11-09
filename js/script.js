@@ -55,18 +55,22 @@ function removeAllClasses(slide) {
 let startX;
 let currentIndex = 0;
 
-const calcIndexSlideAbout = (mouseDrag) => {
-  if (mouseDrag > 50) {
-    if (slideIndexAbout == slidesAbout.length - 1) {
-      slideIndexAbout = 0;
-    } else {
-      slideIndexAbout++;
+const calcIndexSlideAbout = (mouseDragX, mouseDragY) => {
+  if (mouseDragX > 50) {
+    if (mouseDragX > mouseDragY) {
+      if (slideIndexAbout == slidesAbout.length - 1) {
+        slideIndexAbout = 0;
+      } else {
+        slideIndexAbout++;
+      }
     }
-  } else if (mouseDrag < -50) {
-    if (slideIndexAbout == 0) {
-      slideIndexAbout = slidesAbout.length - 1;
-    } else {
-      slideIndexAbout--;
+  } else if (mouseDragX < -50) {
+    if (mouseDragX < mouseDragY) {
+      if (slideIndexAbout == 0) {
+        slideIndexAbout = slidesAbout.length - 1;
+      } else {
+        slideIndexAbout--;
+      }
     }
   } else {
     return "failed";
@@ -75,18 +79,22 @@ const calcIndexSlideAbout = (mouseDrag) => {
   updateSlideClassesAbout();
 };
 
-const calcIndexSlideProjects = (mouseDrag) => {
-  if (mouseDrag > 50) {
-    if (slideIndexProjects == slidesProjects.length - 1) {
-      slideIndexProjects = 0;
-    } else {
-      slideIndexProjects++;
+const calcIndexSlideProjects = (mouseDragX, mouseDragY) => {
+  if (mouseDragX > 50) {
+    if (mouseDragX > mouseDragY) {
+      if (slideIndexProjects == slidesProjects.length - 1) {
+        slideIndexProjects = 0;
+      } else {
+        slideIndexProjects++;
+      }
     }
-  } else if (mouseDrag < -50) {
-    if (slideIndexProjects == 0) {
-      slideIndexProjects = slidesProjects.length - 1;
-    } else {
-      slideIndexProjects--;
+  } else if (mouseDragX < -50) {
+    if (mouseDragX < mouseDragY) {
+      if (slideIndexProjects == 0) {
+        slideIndexProjects = slidesProjects.length - 1;
+      } else {
+        slideIndexProjects--;
+      }
     }
   } else {
     return "failed";
@@ -117,27 +125,38 @@ let disableDrag = function (boxSlide) {
   }, 500);
 };
 
-let startPosition;
+let startPositionX;
+let startPositionY;
 
 function handleDragStartOrTouchStart(e) {
   const isTouch = e.type.startsWith("touch");
 
-  // Obtém a posição inicial do arraste
   const startX = isTouch ? e.touches[0].pageX : e.pageX;
+  const startY = isTouch ? e.touches[0].pageY : e.pageY;
 
-  startPosition = startX; // Armazena a posição inicial do arraste
+  startPositionX = startX;
+  startPositionY = startY;
 }
 
 function handleDragEndOrTouchEnd(e) {
   const isTouch = e.type.startsWith("touch");
 
-  // Obtém a posição final do arraste
   const endX = isTouch ? e.changedTouches[0].pageX : e.pageX;
+  const endY = isTouch ? e.changedTouches[0].pageY : e.pageY;
 
-  const dragDistance = endX - startPosition;
+  const dragDistanceX = endX - startPositionX;
+  const dragDistanceY = endY - startPositionY;
+
+  // const isHorizontalDrag =
+  //   Math.abs(dragDistance) >
+  //   Math.abs(e.changedTouches[0].pageY - startPositionX);
+
+  // if (!isHorizontalDrag) return;
+
+  // console.log("passou");
 
   if (e.currentTarget === boxSlidesAbout) {
-    const status = calcIndexSlideAbout(dragDistance);
+    const status = calcIndexSlideAbout(dragDistanceX, dragDistanceY);
 
     if (status === "failed") {
       return;
@@ -145,7 +164,7 @@ function handleDragEndOrTouchEnd(e) {
   }
 
   if (e.currentTarget === boxSlidesProjects) {
-    const status = calcIndexSlideProjects(dragDistance);
+    const status = calcIndexSlideProjects(dragDistanceX, dragDistanceY);
 
     if (status === "failed") {
       return;
@@ -156,6 +175,51 @@ function handleDragEndOrTouchEnd(e) {
 }
 
 //End
+
+//////////////////////////////////
+// Images Projects functionality //
+//////////////////////////////////
+
+const imgsProject = [...document.querySelectorAll(".image-project-effect")];
+
+const addImage = function (imgEl) {
+  document.body.appendChild(imgEl);
+
+  setTimeout(() => {
+    imgEl.style.opacity = 0.1;
+  }, 200);
+};
+
+const removeImage = function (imgEl) {
+  imgEl.style.opacity = 0;
+
+  setTimeout(() => {
+    imgEl.remove();
+  }, 400);
+};
+
+imgsProject.forEach((img) => {
+  const imgFile = img.src;
+  const imgEl = document.createElement("img");
+  imgEl.src = imgFile;
+  imgEl.classList.add("img-highlited-project-hover");
+
+  img.addEventListener("mouseenter", function (e) {
+    addImage(imgEl);
+  });
+
+  img.addEventListener("touchstart", function (e) {
+    addImage(imgEl);
+  });
+
+  img.addEventListener("mouseleave", function (e) {
+    removeImage(imgEl);
+  });
+
+  img.addEventListener("touchend", function (e) {
+    removeImage(imgEl);
+  });
+});
 
 //////////////////////////////////
 // Carrousell functionality ABOUT //
@@ -362,5 +426,51 @@ function ativarModoClaro() {
   document.documentElement.style.setProperty("--dark-color", "#fefbfc");
   document.documentElement.style.setProperty("--white-color", "#080202");
 }
+
+//End
+
+//////////////////////////////
+// Technology-section //
+//////////////////////////////
+
+const technologyBox = document.querySelector(".img-box-technologies");
+const technologiesImgs = document.querySelectorAll(".img-technology");
+const technolgiesItems = document.querySelectorAll(".tecnology-item");
+const contentTechnolgies = document.querySelector(
+  ".content-technolgies-info-box"
+);
+
+technologiesImgs.forEach((elem) => {
+  elem.addEventListener("mouseenter", function (e) {
+    const id = e.target.id;
+
+    const imageBoxTech = document.querySelector(`.${id}-tech`);
+    const containerRect = contentTechnolgies.getBoundingClientRect();
+    const listItemRect = imageBoxTech.getBoundingClientRect();
+
+    console.log(containerRect);
+
+    if (listItemRect.bottom > containerRect.bottom) {
+      contentTechnolgies.scrollTop +=
+        listItemRect.bottom - containerRect.bottom;
+
+      console.log("bottom");
+    } else if (listItemRect.top < containerRect.top) {
+      contentTechnolgies.scrollTop += listItemRect.top - containerRect.top;
+
+      console.log("top");
+    }
+
+    imageBoxTech.classList.add("technology-highlighted");
+  });
+});
+
+technologiesImgs.forEach((elem) => {
+  elem.addEventListener("mouseleave", function (e) {
+    technolgiesItems.forEach((elem) => {
+      elem.classList.remove("technology-highlighted");
+    });
+  });
+});
 
 //End
