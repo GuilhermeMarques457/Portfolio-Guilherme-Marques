@@ -7,6 +7,7 @@ const translations_pt = {
   commom_status_discontinued: "Descontinuado",
   commom_status_in_development: "Em desinvolvimento",
   commom_technology_text: "Técnologias:",
+  commom_certificate_download_text: "Baixar Certificado",
   text_about_me_1:
     "Olá, Guilherme! Prazer em conhecê-lo. Sou Guilherme, um entusiasta de 17 anos que se apaixonou pelo desenvolvimento de sistemas desde que iniciou na área em 2022. Recentemente, tive a imensa satisfação de concluir meu curso técnico na Etec, alcançando esse marco no primeiro semestre de 2023.",
   text_about_me_2:
@@ -28,9 +29,56 @@ const translations_pt = {
     "Atualmente estou empregado em uma empresa onde estou trabalhando com o desenvolvimento de software utilizando ASP.NET Razor Pages, além de integração com um aplicativo móvel utilizando o flutter. Essa oportunidade surgiu por meio da indicação do meu professor, e desde então tenho atuado como desenvolvedor nessa empresa.",
   text_xp_2:
     "Na empresa em que trabalho, sou responsável pela manutenção do software e também pela implementação de novas funcionalidades que meu chefe considera interessantes para o sistema. Atualmente, desfruto da autonomia de trabalhar sozinho, assumindo diversas tarefas, e quando me deparo com algum obstáculo, posso contar com a ajuda e orientação do meu professor.",
-  title_achievements: "Certificações e Conquistas",
+  title_achievements: "Certificações",
   text_achievements:
-    "Ao longo da minha trajetória profissional, tive a oportunidade de obter diversos certificados que comprovam minha expertise em diferentes áreas. Cada certificado representa um marco importante na minha jornada de aprendizado e demonstra meu comprometimento em me aprimorar constantemente. Compartilho a seguir alguns dos certificados que conquistei, os quais refletem minha dedicação e conhecimento adquiridos ao longo do tempo. Todos esses certificados podem ser encontrados dentro do meu perfil do linkedin.",
+    "Ao longo da minha trajetória profissional, tive a oportunidade de obter diversos certificados que comprovam minha expertise em diferentes áreas. Todos esses certificados podem ser encontrados dentro do meu perfil do linkedin.",
+  certification_title:
+    "Desenvolvimento de Sistemas - Etec Eudecio Luiz Vicente",
+  text_certifications_etec_1:
+    "Foi durante o curso técnico que dei os meus primeiros passos no mundo da tecnologia. Lá, descobri a programação e decidi me especializar na área, absorvendo uma variedade de conhecimentos, tais como:",
+  text_certifications_etec_2:
+    "Além disso, adquiri habilidades em outras áreas valiosas, como Arduino, Design, Redes e muito mais.",
+  text_certifications_asp_net_1:
+    "Em um curso extenso e abrangente na Udemy, adquiri uma base sólida em ASP.NET, consolidando meu foco no ambiente .NET. Durante esse curso, explorei diversos tópicos, incluindo:",
+  text_certifications_asp_net_2:
+    "Conceitos basícos de ASP.NET como middlewares, Controllers, Routing, Views, Patial Views, Dependecy Injection, Environments, Configuration.",
+  text_certifications_asp_net_3:
+    "Conceitos Avançados como View Components, xUnit, Entity Framework, Unit Testing, Filters, SOLID, Identity, JWT Tokens, Minimal API.",
+  text_certifications_ef_1:
+    "Em um curso complementar sobre o ORM mais amplamente utilizado, decidi aprofundar meus conhecimentos e compreender os detalhes do funcionamento do Entity Framework. Aqui estão algumas features exploradas:",
+  csharp_title: "Curso Programação Completo C# - CFB Cursos",
+  text_certifications_csharp_1:
+    "No início do meu aprendizado, concluí um curso fundamental que me proporcionou uma compreensão sólida da lógica de programação, utilizando principalmente a linguagem C#. Além disso, explorei diversos conceitos e técnicas, incluindo:",
+  text_certifications_angular_1:
+    "Em um curso extenso e abrangente na Udemy, construí uma base sólida em Angular. A escolha de estudar Angular foi motivada pela análise das tendências, especialmente pelo seu uso frequente em conjunto com ASP.NET. Durante esse curso, aprofundei-me em uma variedade de tópicos, abordando:",
+  text_certifications_angular_2:
+    "Conceitos basícos de Angular como TypeScript, Components, Modules, DataBinding, Directives, Angular CLI, Services, Dependecy Injection, Routing, Observables, Forms, Pipes, Guards, Interceptors.",
+  text_certifications_angular_3:
+    "Conceitos avançados como StandAlone Components, Signals, NgRx, RxJs, Animations, Angular Univeral, Service Workers, Unit Testing.",
+  rxjs_title: "RxJS + Angular Material - Frontend Reativo do Zero!",
+  text_certifications_angular_material_1:
+    "Buscando aprimorar minhas habilidades no universo do desenvolvimento Angular, realizei um curso focado em RxJS e Angular Material. Essa experiência foi fundamental para aprofundar no que não foi abordado em outros cursos de Angular que já havia concluído.",
+  docker_title: "Docker essencial para a plataforma .NET (Bônus Kubernetes)",
+  text_certifications_docker_1:
+    "Enfrentei desafios consideráveis durante a realização de um curso, especialmente ao abordar o Docker. Analisando o mercado, identifiquei a alta demanda por habilidades em Docker em diversas vagas.",
+  text_certifications_docker_2:
+    "Não apenas adquiri habilidades essenciais em Docker, mas também explorei Kubernetes como um bônus adicional.",
+  text_certifications_docker_3:
+    " Conceitos de Docker como Conteiners, Imagens, Volumes, Networks, Docker Compose, Conteinerização de Microservices ASP.NET WEB API com vários banco de dados (Sql Server, MongoDb, Redis, PostgreSQL)",
+  text_certifications_javascript_1:
+    "Um extenso e aprofundado curso que me permitiu atingir quase um nível profissional em JavaScript. Ao longo do curso, explorei uma variedade de conceitos essenciais e participei da criação de projetos incríveis, aprimorando significativamente minha habilidade na linguagem e preparando-me para desafios complexos no desenvolvimento web.",
+  text_certifications_javascript_2:
+    "Conceitos basícos de JavaScript como DOM, Data  Structures (Array, Maps, Sets), Functions, Arrays Methods, Dates.",
+  text_certifications_javascript_3:
+    "Conceitos avançados como DOOM avançado AJAX, JavaScript OOP, Modules, Parcel, JavaScript moderno.",
+  text_certifications_webdesign_1:
+    "  Meu primeiro curso na Udemy foi focado em Web Design. Naquela época, meu interesse era significativo nesse campo, embora meus esforços estejam atualmente direcionados para outras áreas. A experiência foi valiosa, proporcionando uma base sólida em UX/UI, apesar de minha mudança de foco, contribui para minha compreensão global no desenvolvimento.",
+  text_certifications_git_1:
+    "Optei por investir em um curso de Git para aprimorar a segurança e gerenciamento de projetos. Aprendi diversos comandos essenciais, fortalecendo minha habilidade em práticas eficientes de versionamento.",
+  text_certifications_git_2:
+    "Conceitos Basicos como Staging files, Commits, Branching, Merging, Stashing, Fetching, Pulling, Reseting, Reverting, Restoring.",
+  text_certifications_git_3:
+    "Conceitos avançados como Refloging, Aliases, Rebasing, Git atrás dos panos (Refs, Head, Hash-Object, Blobs, Trees).",
   text_project_omnifood:
     'Este projeto foi realizado durante o curso "Build Responsive Real-World Websites with HTML and CSS", e obtive uma série de aprendizados valiosos por meio dele, tais como design de experiência do usuário (UX) e design de interface (UI), juntamente com outros conceitos fundamentais, como responsividade e a forma como um site é desenvolvido no contexto real.',
   text_project_odonto_1:
@@ -67,6 +115,10 @@ const translations_pt = {
     'Aqui estão alguns projetos que desenvolvi durante o meu curso de Asp.Net 7, intitulado "Asp.Net Core 7 (.NET 7) | True Ultimate Guide". Esses projetos representam um conjunto abrangente de funcionalidades que adquiri ao longo do curso.',
   text_project_aspnet_2:
     "Durante o curso, adquiri diversas habilidades e apliquei em meus projetos. Isso incluiu programação assíncrona, criação de testes unitários usando xUnit e mocks, utilização de injeção de dependência, definição de contratos para serviços e repositórios, adoção do padrão DTO (Data Transfer Object), implementação do Entity Framework para conexão do banco de dados, aplicação dos princípios SOLID, integração do Identity, implementação de logging, utilização de filtros e muitas outras funcionalidades.",
+  text_project_docker_microsservice_1:
+    "Um projeto que consiste em microserviços em ASP.NET contêinerizados, cada um interagindo com diferentes contêineres de banco de dados, como MongoDB e PostgreSQL, além de fazer uso de um serviço de armazenamento local (Redis).",
+  text_project_docker_microsservice_2:
+    "Uma abordagem inovadora foi adotada na arquitetura pelo microsserviço de desconto, substituindo o tradicional REST  pelo protocolo gRPC. Para mais informaçoes do que foi implementado no projeto verifique a seção de certificões onde é possivel ver todos os conceitos apreendidos no curso.",
   text_project_angular_recipe_1:
     'Este projeto foi desenvolvido como parte do curso "Angular- The Complete Guide (2023 Edition)". O objetivo central deste projeto foi aprofundar o conhecimento em Angular e criar um sistema de gerenciamento de receitas e ingredientes altamente funcional e focado em UX.',
   text_project_angular_recipe_2:
@@ -80,6 +132,7 @@ const translations_en = {
   commom_status_discontinued: "Discontinued",
   commom_status_in_development: "In development",
   commom_technology_text: "Technologies:",
+  commom_certificate_download_text: "Download Certificate",
   text_about_me_1:
     "Hello, Guilherme! Nice to meet you. I'm Guilherme, a 17-year-old enthusiast who fell in love with System Development since I started in the field in 2022. Recently, I had the immense satisfaction of completing my technical course at Etec, achieving this milestone in the first semester of 2023.",
   text_about_me_2:
@@ -101,9 +154,55 @@ const translations_en = {
     "Currently, I am employed at a company where I am working on software development using ASP.NET Razor Pages, as well as integrating with a mobile application using Flutter. This opportunity appeared through a recommendation from my professor, and since then, I have been working as a developer at this company.",
   text_xp_2:
     "At the company I work for, I am responsible for software maintenance and also for implementing new features that my boss considers interesting for the system. Currently, I enjoy the autonomy of working alone, assuming various tasks, and when I encounter any obstacles, I can call help and guidance of my professor.",
-  title_achievements: "Certificates and Achievements",
+  title_achievements: "Certificates",
   text_achievements:
-    "Throughout my professional journey, I have had the opportunity to obtain various certifications that demonstrate my expertise in different areas. Each certificate represents an important part in my learning journey and showcases my commitment to continuously improve myself. I would like to share some of the certificates I have earned, which reflect my dedication and knowledge acquired over time. All these certificates can be found on my LinkedIn profile.",
+    "Throughout my professional journey, I have had the opportunity to obtain various certifications that demonstrate my expertise in different areas. All these certificates can be found on my LinkedIn profile.",
+  certification_title: "Systems Development - Etec Eudecio Luiz Vicente",
+  text_certifications_etec_1:
+    "It was during the technical course that I took my first steps into the world of technology. There, I discovered programming and decided to specialize in the field, absorbing a variety of knowledge, such as:",
+  text_certifications_etec_2:
+    "Additionally, I acquired skills in other valuable areas such as Arduino, Design, Networks, and more.",
+  text_certifications_asp_net_1:
+    "In an extensive and comprehensive course on Udemy, I gained a solid foundation in ASP.NET, consolidating my focus on the .NET environment. During this course, I explored various topics, including:",
+  text_certifications_asp_net_2:
+    "Basic ASP.NET concepts such as middlewares, Controllers, Routing, Views, Partial Views, Dependency Injection, Environments, Configuration.",
+  text_certifications_asp_net_3:
+    "Advanced concepts such as View Components, xUnit, Entity Framework, Unit Testing, Filters, SOLID, Identity, JWT Tokens, Minimal API.",
+  text_certifications_ef_1:
+    "In a complementary course on the most widely used ORM, I decided to deepen my knowledge and understand the details of how Entity Framework works. Here are some features explored:",
+  csharp_title: "Complete C# Programming Course - CFB Courses",
+  text_certifications_csharp_1:
+    "At the beginning of my learning journey, I completed a fundamental course that provided me with a solid understanding of programming logic, primarily using the C# language. Additionally, I explored various concepts and techniques, including:",
+  text_certifications_angular_1:
+    "In an extensive and comprehensive Udemy course, I built a solid foundation in Angular. The choice to study Angular was motivated by analyzing trends, especially its frequent use in conjunction with ASP.NET. During this course, I delved into a variety of topics, covering:",
+  text_certifications_angular_2:
+    "Basic Angular concepts such as TypeScript, Components, Modules, DataBinding, Directives, Angular CLI, Services, Dependency Injection, Routing, Observables, Forms, Pipes, Guards, Interceptors.",
+  text_certifications_angular_3:
+    "Advanced concepts such as StandAlone Components, Signals, NgRx, RxJs, Animations, Angular Universal, Service Workers, Unit Testing.",
+  rxjs_title: "RxJS + Angular Material - Reactive Frontend from Scratch!",
+  text_certifications_angular_material_1:
+    "To enhance my skills in the Angular development universe, I took a course focused on RxJS and Angular Material. This experience was crucial to delve into aspects not covered in other Angular courses I had already completed.",
+  docker_title: "Essential Docker for the .NET Platform (Bonus Kubernetes)",
+  text_certifications_docker_1:
+    "I faced considerable challenges during a course, especially when tackling Docker. Analyzing the market, I identified high demand for Docker skills in various job openings.",
+  text_certifications_docker_2:
+    "Not only did I acquire essential Docker skills, but I also explored Kubernetes as an additional bonus.",
+  text_certifications_docker_3:
+    "Docker concepts such as Containers, Images, Volumes, Networks, Docker Compose, Containerization of Microservices ASP.NET WEB API with various databases (SQL Server, MongoDB, Redis, PostgreSQL)",
+  text_certifications_javascript_1:
+    "An extensive and in-depth course that allowed me to reach almost a professional level in JavaScript. Throughout the course, I explored a variety of essential concepts and participated in the creation of amazing projects, significantly enhancing my language skills and preparing me for complex challenges in web development.",
+  text_certifications_javascript_2:
+    "Basic JavaScript concepts such as DOM, Data Structures (Array, Maps, Sets), Functions, Arrays Methods, Dates.",
+  text_certifications_javascript_3:
+    "Advanced concepts such as Advanced DOM, AJAX, JavaScript OOP, Modules, Parcel, Modern JavaScript.",
+  text_certifications_webdesign_1:
+    "My first Udemy course focused on Web Design. At that time, my interest in this field was significant, although my efforts are currently directed towards other areas. The experience was valuable, providing a solid foundation in UX/UI, despite my change in focus, contributing to my overall understanding of development.",
+  text_certifications_git_1:
+    "I chose to invest in a Git course to enhance project security and management. I learned various essential commands, strengthening my ability in efficient versioning practices.",
+  text_certifications_git_2:
+    "Basic concepts such as Staging files, Commits, Branching, Merging, Stashing, Fetching, Pulling, Resetting, Reverting, Restoring.",
+  text_certifications_git_3:
+    "Advanced concepts such as Reflogging, Aliases, Rebasing, Git Behind the Scenes (Refs, Head, Hash-Object, Blobs, Trees).",
   text_project_omnifood: `This project were made during the course "Build Responsive Real-World Websites with HTML and CSS and I've gained a series of valuable learnings through it, such as User Experience (UX) design and User Interface (UI) design, along with other fundamental concepts like responsiveness and how a website is developed in a real-world context.`,
   text_project_odonto_1:
     'The "Odonto Control" project holds a special place in my heart. The idea for this project was inspired by my dentist, and right after completing my ASP.NET course, I decided to put all the knowledge I had gained into practice. This resulted in an amazing final project with various features that took me months to implement.',
@@ -138,6 +237,10 @@ const translations_en = {
     'Here are some projects I developed during my Asp.Net 7 course, titled "Asp.Net Core 7 (.NET 7) | True Ultimate Guide". These projects represent a comprehensive set of functionalities that I acquired during the course.',
   text_project_aspnet_2:
     "Throught the course, I've learned various skills and applied them in my projects. This included asynchronous programming, creating unit tests using xUnit and mocks, utilizing dependency injection, defining contracts for services and repositories, adopting the DTO (Data Transfer Object) pattern, implementing Entity Framework for database connectivity, integrating Identity, applying the SOLID pattern, implementing logging, utilizing filters, and many other functionalities.",
+  text_project_docker_microsservice_1:
+    "A project consisting of containerized microservices in ASP.NET, each interacting with different database containers such as MongoDB and PostgreSQL, and utilizing a local storage service (Redis).",
+  text_project_docker_microsservice_2:
+    "An innovative approach was adopted in the architecture by the discount microservice, replacing the traditional REST with the gRPC protocol. For more information on what was implemented in the project, check the certifications section where you can see all the concepts learned in the course.",
   text_project_angular_recipe_1:
     'This project was developed as part of the "Angular - The Complete Guide (2023 Edition),". The central principal point of this project was to learn Angular and create a highly functional recipe and ingredient management system with a strong focus on user experience (UX).',
   text_project_angular_recipe_2:

@@ -260,7 +260,7 @@ body.modo-claro {
 .slide-content > :nth-child(1) {
   height: auto;
   height: 50rem;
-  padding-right: 2rem;
+  padding-right: 3rem;
 }
 
 .box-slide-content {
@@ -420,11 +420,23 @@ body.modo-claro {
   text-decoration: none;
   cursor: pointer;
   transition: 0.4s all;
+  background-color: var(--primary-color);
+  padding: 0.7rem 1.8rem;
+  font-size: 1.4rem;
+  color: var(--white-color);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.certificate-box {
+  display: flex;
+  justify-content: end;
 }
 
 .certificate-link:hover {
-  color: var(--primary-color-darker);
-  transform: scale(1.2);
+  background-color: var(--primary-color-darker);
 }
 
 /*end*/
@@ -548,15 +560,16 @@ body.modo-claro {
 .img-box-technologies {
   gap: 4rem;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   justify-items: center;
+  padding: 1rem;
 }
 
 .img-technology {
   cursor: pointer;
   filter: grayscale(1) brightness(1.2);
   transition: 0.4s all;
-  height: 8rem;
+  height: 6rem;
 }
 
 .img-technology:hover {
@@ -565,6 +578,7 @@ body.modo-claro {
 }
 
 .content-technolgies-info-box {
+  padding: 0.5rem 0;
   height: 50rem;
   overflow: auto;
   padding-right: 2rem;
@@ -743,4 +757,72 @@ body.modo-claro {
   height: 100%;
   width: 100%;
   transition: 1s all;
+}
+
+/*List stylization*/
+.grid-column-image-smaller {
+  grid-template-columns: repeat(5, 1fr) !important;
+}
+
+.image-width-responsive {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.list-description {
+  font-size: 1.4rem;
+  height: 100%;
+  padding: 0.8rem 2.6rem;
+  transition: 0.3s all;
+  overflow: hidden;
+}
+
+.list-dropdown:hover {
+  cursor: pointer;
+}
+
+.list-dropdown {
+  width: 95%;
+  overflow: hidden;
+}
+
+.description-not-showed {
+  transform: translateY(-300px);
+  opacity: 0;
+  height: 0;
+}
+
+.certificate-image {
+  grid-column: 1/3;
+}
+
+.certificate-content {
+  grid-column: 3/6;
+}
+
+.list-description p {
+  line-height: 1.3;
+}
+
+.list-description ul {
+  margin: 1.6rem 0;
+  list-style: none;
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.list-description li {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  line-height: 1.3;
+}
+
+.list-description li i {
+  font-size: 1.6rem;
+
+  color: var(--primary-color);
 }
