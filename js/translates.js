@@ -79,6 +79,10 @@ const translations_pt = {
     "Conceitos Basicos como Staging files, Commits, Branching, Merging, Stashing, Fetching, Pulling, Reseting, Reverting, Restoring.",
   text_certifications_git_3:
     "Conceitos avançados como Refloging, Aliases, Rebasing, Git atrás dos panos (Refs, Head, Hash-Object, Blobs, Trees).",
+  text_certifications_azure_1:
+    "Após uma análise do mercado, identifiquei uma crescente demanda por profissionais com habilidades em Azure, tornando esse conhecimento um diferencial valioso. Com esse objetivo em mente, concluí um curso abrangente que me capacitou criar serviços no Azure por meio do portal e pelo Azure CLI.",
+  text_certifications_azure_2:
+    "Serviços como App Services, Azure SQL, Azure Cosmos DB, Azure Storage, Azure Service Bus, Azure Functions, Azure Virtual Machines e Azure Containers e Microsoft Azure Active Directory (Azure AD).",
   text_project_omnifood:
     'Este projeto foi realizado durante o curso "Build Responsive Real-World Websites with HTML and CSS", e obtive uma série de aprendizados valiosos por meio dele, tais como design de experiência do usuário (UX) e design de interface (UI), juntamente com outros conceitos fundamentais, como responsividade e a forma como um site é desenvolvido no contexto real.',
   text_project_odonto_1:
@@ -143,12 +147,6 @@ const translations_en = {
   nav_projects: "Projects",
   title_who_i_am: "Who am I?",
   title_habilities: "Highlighted Technologies",
-  // text_habilities_1:
-  //   "During my journey as a developer, I have acquired a diverse set of skills. Initially, my desire was to become a Front-end programmer, and to get that goal, I completed a web design course on Udemy (which you can find in the curriculum section). Additionally, I am about to finish a JavaScript course, to in future learn a framework.",
-  // text_habilities_2:
-  //   "However, as they say, things don't always go as planned. Circumstances led me to get into back-end development using ASP.NET. This was particularly relevant for my Final Course Project (TCC in Brasil), which was developed in ASP.NET MVC 5, and also for my current job. Recently, I completed an ASP.NET 7 course and resumed my JavaScript course because my desire is to become a full-stack developer. This ambition reflects my eagerness to combine my front-end and back-end skills to create dynamic applications.",
-  // text_habilities_3:
-  //   "It's worth know that I possess an advanced proficiency in the English language, a skill that I have been developing over a significant period of time. During the pandemic, I dedicated myself intensively to improving my knowledge of the language, resulting in an advanced level of proficiency which I'm really proud of myself.",
   title_xp: "Professional experience",
   text_xp_1:
     "Currently, I am employed at a company where I am working on software development using ASP.NET Razor Pages, as well as integrating with a mobile application using Flutter. This opportunity appeared through a recommendation from my professor, and since then, I have been working as a developer at this company.",
@@ -203,6 +201,10 @@ const translations_en = {
     "Basic concepts such as Staging files, Commits, Branching, Merging, Stashing, Fetching, Pulling, Resetting, Reverting, Restoring.",
   text_certifications_git_3:
     "Advanced concepts such as Reflogging, Aliases, Rebasing, Git Behind the Scenes (Refs, Head, Hash-Object, Blobs, Trees).",
+  text_certifications_azure_1:
+    "After analyzing the market, I recognized a growing demand for professionals with Azure skills, making this knowledge a valuable differentiator. With this goal in mind, I completed a comprehensive course that empowered me to create services on Azure through both the portal and Azure CLI.",
+  text_certifications_azure_2:
+    "Services as App Services, Azure SQL, Azure Cosmos DB, Azure Storage, Azure Service Bus, Azure Functions, Azure Virtual Machines, and Azure Containers and Microsoft Azure Active Directory (Azure AD).",
   text_project_omnifood: `This project were made during the course "Build Responsive Real-World Websites with HTML and CSS and I've gained a series of valuable learnings through it, such as User Experience (UX) design and User Interface (UI) design, along with other fundamental concepts like responsiveness and how a website is developed in a real-world context.`,
   text_project_odonto_1:
     'The "Odonto Control" project holds a special place in my heart. The idea for this project was inspired by my dentist, and right after completing my ASP.NET course, I decided to put all the knowledge I had gained into practice. This resulted in an amazing final project with various features that took me months to implement.',

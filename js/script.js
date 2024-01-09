@@ -16,10 +16,17 @@ navAbout.addEventListener("click", function (e) {
 
   navEfect.style.width = `${e.currentTarget.getBoundingClientRect().width}px`;
 
-  aboutSection.classList.remove("carrousel-hidden");
-  aboutSection.classList.remove("container-left");
+  aboutSection.classList.remove("element-will-desapear-if-not-in-screen");
+
+  aboutSection.classList.add("element-will-show");
+  setTimeout(() => {
+    aboutSection.classList.remove("carrousel-hidden");
+    aboutSection.classList.remove("container-left");
+  }, 10);
+
   projectsSection.classList.add("carrousel-hidden");
   projectsSection.classList.add("container-right");
+  projectsSection.classList.add("element-will-desapear-if-not-in-screen");
 });
 
 navProjects.addEventListener("click", function (e) {
@@ -28,10 +35,17 @@ navProjects.addEventListener("click", function (e) {
 
   navEfect.style.width = `${e.currentTarget.getBoundingClientRect().width}px`;
 
-  projectsSection.classList.remove("container-right");
-  projectsSection.classList.remove("carrousel-hidden");
-  aboutSection.classList.add("container-left");
+  projectsSection.classList.remove("element-will-desapear-if-not-in-screen");
+
+  setTimeout(() => {
+    projectsSection.classList.remove("carrousel-hidden");
+    projectsSection.classList.remove("container-right");
+  }, 10);
+
   aboutSection.classList.add("carrousel-hidden");
+  aboutSection.classList.remove("element-will-show");
+  aboutSection.classList.add("container-left");
+  aboutSection.classList.add("element-will-desapear-if-not-in-screen");
 });
 
 //////////////////////////////
@@ -39,15 +53,23 @@ navProjects.addEventListener("click", function (e) {
 //////////////////////////////
 
 function addRightClasses(slide) {
-  slide.classList.add("element-right", "element-showed");
+  slide.classList.remove("element-will-desapear-if-not-in-screen");
+  setTimeout(() => {
+    slide.classList.add("element-right", "element-showed");
+  }, 10);
 }
 
 function addLeftClasses(slide) {
-  slide.classList.add("element-left", "element-showed");
+  slide.classList.remove("element-will-desapear-if-not-in-screen");
+  setTimeout(() => {
+    slide.classList.add("element-left", "element-showed");
+  }, 10);
 }
 
 function removeAllClasses(slide) {
   slide.classList.remove("element-left", "element-showed", "element-right");
+
+  slide.classList.add("element-will-desapear-if-not-in-screen");
 }
 
 // Drag functionality
@@ -265,16 +287,20 @@ function updateSlideClassesAbout() {
 
     if (index === slideIndexAbout) {
       slide.classList.add("element-showed");
+      slide.classList.remove("element-will-desapear-if-not-in-screen");
 
       if (index === 0) {
         addLeftClasses(slidesAbout[slidesAbout.length - 1]);
         addRightClasses(slidesAbout[index + 1]);
+        slide.classList.remove("element-will-desapear-if-not-in-screen");
       } else if (index === slidesAbout.length - 1) {
         addLeftClasses(slidesAbout[index - 1]);
         addRightClasses(slidesAbout[0]);
+        slide.classList.remove("element-will-desapear-if-not-in-screen");
       } else {
         addLeftClasses(slidesAbout[index - 1]);
         addRightClasses(slidesAbout[index + 1]);
+        slide.classList.remove("element-will-desapear-if-not-in-screen");
       }
 
       break;
