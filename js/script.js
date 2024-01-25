@@ -169,14 +169,6 @@ function handleDragEndOrTouchEnd(e) {
   const dragDistanceX = endX - startPositionX;
   const dragDistanceY = endY - startPositionY;
 
-  // const isHorizontalDrag =
-  //   Math.abs(dragDistance) >
-  //   Math.abs(e.changedTouches[0].pageY - startPositionX);
-
-  // if (!isHorizontalDrag) return;
-
-  // console.log("passou");
-
   if (e.currentTarget === boxSlidesAbout) {
     const status = calcIndexSlideAbout(dragDistanceX, dragDistanceY);
 

@@ -251,6 +251,11 @@
 }
 
 @media (max-width: 47em) {
+  .img-me-box {
+    height: 33rem !important;
+    width: 100% !important;
+  }
+
   .slide-content > :nth-child(1) {
     display: block;
   }

@@ -261,7 +261,7 @@ body.modo-claro {
 .slide-content > :nth-child(1) {
   height: auto;
   height: 50rem;
-  padding-right: 3rem;
+  padding-right: 1rem;
 }
 
 .box-slide-content {
