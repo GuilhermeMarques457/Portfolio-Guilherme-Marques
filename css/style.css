@@ -359,14 +359,16 @@ body.modo-claro {
 .img-me-box {
   height: 50rem !important;
   width: 50rem !important;
-
+  clip-path: circle(50% at 50% 50%);
   overflow: hidden;
 }
 
 .image-me {
+  top: 0px;
+  width: 100%;
+  height: auto !important;
   position: absolute;
-  left: 50%;
-  transform: translate(-50%);
+  scale: 0.8;
 }
 
 .img-box-slide {
