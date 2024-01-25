@@ -133,7 +133,10 @@
   }
 
   .image-me {
-    scale: 1;
+    top: -60px;
+    height: 100%;
+    width: auto !important;
+    scale: 0.8;
   }
 
   .img-box-technologies {
