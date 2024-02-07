@@ -83,6 +83,12 @@ const translations_pt = {
     "Após uma análise do mercado, identifiquei uma crescente demanda por profissionais com habilidades em Azure, tornando esse conhecimento um diferencial valioso. Com esse objetivo em mente, concluí um curso abrangente que me capacitou criar serviços no Azure por meio do portal e pelo Azure CLI.",
   text_certifications_azure_2:
     "Serviços como App Services, Azure SQL, Azure Cosmos DB, Azure Storage, Azure Service Bus, Azure Functions, Azure Virtual Machines e Azure Containers e Microsoft Azure Active Directory (Azure AD).",
+  azure_devops_title:
+    "Azure DevOps - Implantação Contínua para Serviços do Azure",
+  text_certifications_azure_devops_1:
+    "O curso abordou uma variedade de casos de uso, desde os mais simples até os mais avançados. Ao final, todos foram implementados com o Azure DevOps CI/CD. Utilizei diferentes abordagens, incluindo o editor clássico e arquivos YAML para criar pipelines e releases da aplicação.",
+  text_certifications_azure_devops_2:
+    "Explorei diversas formas de deployment, como o modelo blue/green e canary, para esses deploys foram utilizados recursos essenciais do Azure, como Azure App Service com Container Instance, Azure Virtual Machines, Azure Kubernetes Service (AKS) e, por fim, Azure API Management (APIM).",
   text_project_omnifood:
     'Este projeto foi realizado durante o curso "Build Responsive Real-World Websites with HTML and CSS", e obtive uma série de aprendizados valiosos por meio dele, tais como design de experiência do usuário (UX) e design de interface (UI), juntamente com outros conceitos fundamentais, como responsividade e a forma como um site é desenvolvido no contexto real.',
   text_project_odonto_1:
@@ -205,6 +211,11 @@ const translations_en = {
     "After analyzing the market, I recognized a growing demand for professionals with Azure skills, making this knowledge a valuable differentiator. With this goal in mind, I completed a comprehensive course that empowered me to create services on Azure through both the portal and Azure CLI.",
   text_certifications_azure_2:
     "Services as App Services, Azure SQL, Azure Cosmos DB, Azure Storage, Azure Service Bus, Azure Functions, Azure Virtual Machines, and Azure Containers and Microsoft Azure Active Directory (Azure AD).",
+  azure_devops_title: "Azure DevOps - Continuous Deployment for Azure Services",
+  text_certifications_azure_devops_1:
+    "The course covered a variety of use cases, from the simplest to the most advanced. In the end, it were all implemented with Azure DevOps CI/CD. I used different approaches, including the classic editor and YAML files to create pipelines and releases of the application.",
+  text_certifications_azure_devops_2:
+    "I explored different forms of deployment, such as the blue/green and canary model, to implement those deploys essential Azure resources were used, such as Azure App Service with Container Instance, Azure Virtual Machines, Azure Kubernetes Service (AKS) and, finally, Azure API Management (APIM).",
   text_project_omnifood: `This project were made during the course "Build Responsive Real-World Websites with HTML and CSS and I've gained a series of valuable learnings through it, such as User Experience (UX) design and User Interface (UI) design, along with other fundamental concepts like responsiveness and how a website is developed in a real-world context.`,
   text_project_odonto_1:
     'The "Odonto Control" project holds a special place in my heart. The idea for this project was inspired by my dentist, and right after completing my ASP.NET course, I decided to put all the knowledge I had gained into practice. This resulted in an amazing final project with various features that took me months to implement.',

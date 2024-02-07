@@ -805,7 +805,8 @@ body.modo-claro {
 }
 
 .list-description p {
-  line-height: 1.3;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
 }
 
 .list-description ul {
