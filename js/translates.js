@@ -18,12 +18,6 @@ const translations_pt = {
   nav_projects: "Projetos",
   title_who_i_am: "Quem sou eu?",
   title_habilities: "Tecnologias Destacadas",
-  // text_habilities_1:
-  //   "Ao longo da minha trajetória como desenvolvedor, adquiri um conjunto diversificado de habilidades. Inicialmente, meu desejo era me tornar um programador Front-end, e para perseguir esse objetivo, concluí um curso de web design na Udemy (que você pode encontrar na seção de currículo). Além disso, estou prestes a finalizar um curso de JavaScript, avançando para um framework.",
-  // text_habilities_2:
-  //   "No entanto, como dizem, nem sempre as coisas saem como planejado. Circunstâncias me levaram a me aprofundar no desenvolvimento back-end usando ASP.NET. Isso foi especialmente relevante para o meu Trabalho de Conclusão de Curso (TCC), que foi desenvolvido em ASP.NET MVC 5, e também para o meu trabalho atual. Recentemente, concluí um curso de ASP.NET 7 e retomei meu curso de JavaScript, pois meu desejo é me tornar um desenvolvedor full stack. Essa ambição reflete meu anseio de combinar minhas habilidades front-end e back-end para criar aplicações abrangentes e dinâmicas.",
-  // text_habilities_3:
-  //   "Vale ressalter que uma das minhas habilidades é o domínio avançado da língua inglesa, uma competência que venho desenvolvendo ao longo de um período significativo de tempo. Durante a pandemia, decidi dedicar-me intensamente a aprimorar meu conhecimento nesse idioma, adquirindo um nível de proficiência avançada, do qual eu possuo muito orgulho.",
   title_xp: "Experiência Profissional",
   text_xp_1:
     "Atualmente estou empregado em uma empresa onde estou trabalhando com o desenvolvimento de software utilizando ASP.NET Razor Pages, além de integração com um aplicativo móvel utilizando o flutter. Essa oportunidade surgiu por meio da indicação do meu professor, e desde então tenho atuado como desenvolvedor nessa empresa.",
@@ -55,6 +49,14 @@ const translations_pt = {
     "Conceitos basícos de Angular como TypeScript, Components, Modules, DataBinding, Directives, Angular CLI, Services, Dependecy Injection, Routing, Observables, Forms, Pipes, Guards, Interceptors.",
   text_certifications_angular_3:
     "Conceitos avançados como StandAlone Components, Signals, NgRx, RxJs, Animations, Angular Univeral, Service Workers, Unit Testing.",
+  ecommerce_title:
+    "Aprenda a construir um aplicativo de e-commerce com .Net Core e Angular",
+  text_certifications_ecommerce_1:
+    "Um curso extenso e altamente complexo foi desenvolvido com o objetivo de guiar os participantes na criação completa de um e-commerce a partir do zero, abrangendo tanto o desenvolvimento do backend (utilizando ASP.NET Core 8 Web API) quanto do frontend (utilizando Angular 17).",
+  text_certifications_ecommerce_2:
+    "Este curso expande significativamente os conceitos previamente abordados em outros cursos, elevando o nível de complexidade. Um exemplo é o aprofundamento no uso de C# generics, que anteriormente era pouco explorado. Neste curso, uma abordagem avançada é empregada, onde todo o repositório é genérico, seguindo o padrão 'specification'.",
+  text_certifications_ecommerce_3:
+    "O curso também inclui a exploração de conceitos como Identity, JWT e o processamento principal de pagamentos utilizando a API do Stripe.",
   rxjs_title: "RxJS + Angular Material - Frontend Reativo do Zero!",
   text_certifications_angular_material_1:
     "Buscando aprimorar minhas habilidades no universo do desenvolvimento Angular, realizei um curso focado em RxJS e Angular Material. Essa experiência foi fundamental para aprofundar no que não foi abordado em outros cursos de Angular que já havia concluído.",
@@ -83,6 +85,12 @@ const translations_pt = {
     "Após uma análise do mercado, identifiquei uma crescente demanda por profissionais com habilidades em Azure, tornando esse conhecimento um diferencial valioso. Com esse objetivo em mente, concluí um curso abrangente que me capacitou criar serviços no Azure por meio do portal e pelo Azure CLI.",
   text_certifications_azure_2:
     "Serviços como App Services, Azure SQL, Azure Cosmos DB, Azure Storage, Azure Service Bus, Azure Functions, Azure Virtual Machines e Azure Containers e Microsoft Azure Active Directory (Azure AD).",
+  text_certifications_next_1:
+    "Um curso foi solicitado para mim quando uma demanda crucial de Next.js surgiu na empresa. Este curso é bastante abrangente, fornecendo um rico aprendizado sobre as duas estruturas fundamentais do Next.js: app & pages router.",
+  text_certifications_next_2:
+    "O curso aborda os conceitos básicos do Next.js, como a estrutura de roteamento e redirecionamento, além de fornecer uma introdução aos conceitos fundamentais do React, incluindo componentes do lado do cliente e do servidor.",
+  text_certifications_next_3:
+    "O curso também aborda conceitos avançados do pages router do Next.js, explorando os diferentes tipos de renderização, como a renderização do lado do servidor e a geração de páginas estáticas com props dinâmicos.",
   azure_devops_title:
     "Azure DevOps - Implantação Contínua para Serviços do Azure",
   text_certifications_azure_devops_1:
@@ -120,6 +128,9 @@ const translations_pt = {
     'O projeto denominado "Forkify", foi desafiador, porém incrivelmente gratificante, pois me deu a oportunidade de aplicar e consolidar todos os conhecimentos que adquiri ao longo do curso. Utilizei uma arquitetura MVC e JavaScript puro (Vanilla JS), com a compilação realizada pelo Parcel.',
   text_project_js_4:
     "Já o outro projeto chamando Mapty foi bem mais simples, um app de monitoramento de corridas e caminhadas utilizando uma API de geolocalização, no entando adquiri diversos conhecimentos na elaboração do mesmo.",
+  text_title_project_nextjs_2: "Projetos em NextJs",
+  text_project_nextjs_1:
+    'Aqui estão alguns dos projetos que desenvolvi durante o curso "Next.js 14 & React - The Complete Guide", a realização dos mesmo me foi solicitado quando uma demanda crucial de Next.js surgiu na empresa. . Esses projetos me forneceram uma compreensão sólida de conceitos fundamentais, incluindo as duas estruturas do Next.js (pages & file routing), bem como a prática de conceitos avançados como a geração de páginas com server-side props e static props. Além disso, explorei o uso de diversas bibliotecas, como o next-auth, ampliando ainda mais meu conhecimento e habilidades em Next.js e React.',
   text_title_project_aspnet: "Projetos em Asp.Net 7",
   text_project_aspnet_1:
     'Aqui estão alguns projetos que desenvolvi durante o meu curso de Asp.Net 7, intitulado "Asp.Net Core 7 (.NET 7) | True Ultimate Guide". Esses projetos representam um conjunto abrangente de funcionalidades que adquiri ao longo do curso.',
@@ -183,6 +194,14 @@ const translations_en = {
     "Basic Angular concepts such as TypeScript, Components, Modules, DataBinding, Directives, Angular CLI, Services, Dependency Injection, Routing, Observables, Forms, Pipes, Guards, Interceptors.",
   text_certifications_angular_3:
     "Advanced concepts such as StandAlone Components, Signals, NgRx, RxJs, Animations, Angular Universal, Service Workers, Unit Testing.",
+  ecommerce_title:
+    "Learn to build an e-commerce app with .Net Core and Angular",
+  text_certifications_ecommerce_1:
+    "A comprehensive and highly complex course has been developed with the aim of guiding participants through the complete creation of an e-commerce from scratch, covering both backend development (using ASP.NET Core 8 Web API) and frontend development (using Angular 17).",
+  text_certifications_ecommerce_2:
+    "This course significantly expands upon previously covered concepts, raising the level of complexity. For example, there is a deeper dive into the use of C# generics, which was previously less explored. In this course, an advanced approach is employed where the entire repository is generic, following the 'specification' pattern.",
+  text_certifications_ecommerce_3:
+    "The course also includes the exploration of concepts such as Identity, JWT, and the core payment processing using the Stripe API.",
   rxjs_title: "RxJS + Angular Material - Reactive Frontend from Scratch!",
   text_certifications_angular_material_1:
     "To enhance my skills in the Angular development universe, I took a course focused on RxJS and Angular Material. This experience was crucial to delve into aspects not covered in other Angular courses I had already completed.",
@@ -211,6 +230,12 @@ const translations_en = {
     "After analyzing the market, I recognized a growing demand for professionals with Azure skills, making this knowledge a valuable differentiator. With this goal in mind, I completed a comprehensive course that empowered me to create services on Azure through both the portal and Azure CLI.",
   text_certifications_azure_2:
     "Services as App Services, Azure SQL, Azure Cosmos DB, Azure Storage, Azure Service Bus, Azure Functions, Azure Virtual Machines, and Azure Containers and Microsoft Azure Active Directory (Azure AD).",
+  text_certifications_next_1:
+    "A course was requested for me when a critical demand for Next.js arose in the company. This course is quite comprehensive, providing rich learning about the two fundamental structures of Next.js: app & pages router.",
+  text_certifications_next_2:
+    "The course covers the basic concepts of Next.js, such as routing structure and redirection, as well as providing an introduction to fundamental React concepts, including client and server-side components.",
+  text_certifications_next_3:
+    "The course also delves into advanced concepts of the Next.js pages router, exploring different types of rendering, such as server-side rendering and generating static pages with dynamic props.",
   azure_devops_title: "Azure DevOps - Continuous Deployment for Azure Services",
   text_certifications_azure_devops_1:
     "The course covered a variety of use cases, from the simplest to the most advanced. In the end, it were all implemented with Azure DevOps CI/CD. I used different approaches, including the classic editor and YAML files to create pipelines and releases of the application.",
@@ -245,6 +270,9 @@ const translations_en = {
     'The project named "Forkify" was challenging but incredibly rewarding, as it gave me the opportunity to apply and solidify all the knowledge I gained throughout the course. I used an MVC architecture and pure JavaScript (Vanilla JS), with bundling done by Parcel.',
   text_project_js_4:
     "On the other hand, the project called Mapty was much simpler, an app for tracking runs and walks using a geolocation API. However, I gained a lot of knowledge while working on it.",
+  text_title_project_nextjs_1: "Projects in Next.js",
+  text_project_nextjs_1:
+    "Here are some of the projects I developed during the 'Next.js 14 & React - The Complete Guide' course. The completion of these projects was requested when a crucial demand for Next.js arose in the company. These projects provided me with a solid understanding of fundamental concepts, including both structures of Next.js (pages & file routing), as well as the practice of advanced concepts such as generating pages with server-side props and static props. Additionally, I explored the use of various libraries, such as next-auth, further expanding my knowledge and skills in Next.js and React.",
   text_title_project_aspnet: "Asp.Net 7 Projects",
   text_project_aspnet_1:
     'Here are some projects I developed during my Asp.Net 7 course, titled "Asp.Net Core 7 (.NET 7) | True Ultimate Guide". These projects represent a comprehensive set of functionalities that I acquired during the course.',
