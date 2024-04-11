@@ -105,6 +105,12 @@ const translations_pt = {
     "Durante o desenvolvimento desse projeto, adquiri valiosas experiências sobre a estruturação de sistemas, aprendendo  com meus acertos e erros. Essa jornada me proporcionou um profundo entendimento do ambiente .NET e me deixou extremamente confiante na minha habilidade de desenvolvimento.",
   text_project_odonto_3:
     "Para compartilhar esse trabalho, disponibilizei o projeto no GitHub. No entanto, tenho planos de comercializá-lo no futuro, por isso, algumas informações sensíveis no projeto do GitHub foram alteradas para proteger o projeto.",
+  text_project_ecommerce_1:
+    "Nesse projeto, o backend foi construído como uma API utilizando .NET Core. Para gerenciar a autenticação e autorização dos usuários, foi implementado o ASP.NET Identity juntamente com o JTW Tokens. Isso proporcionou uma forma segura e eficiente de lidar com o registro, login e controle de acesso.",
+  text_project_ecommerce_2:
+    "Já no frontend, o Angular foi a escolha para criar uma interface de usuário dinâmica e interativa. A utilização do Bootstrap ajudou a garantir um design responsivo e atraente, facilitando a experiência do usuário em diferentes dispositivos. Além disso, o Redis foi integrado à aplicação para armazenar o carrinho de compras dos usuários de forma eficiente.",
+  text_project_ecommerce_3:
+    "E para processar os pagamentos online, foi implementado o Stripe, garantindo transações seguras e compatíveis com os padrões de segurança europeus. Por fim, a aplicação foi implantada em um servidor Linux, garantindo estabilidade e escalabilidade na produção. Essa combinação de tecnologias resultou em um e-commerce completo e funcional, pronto para atender às necessidades dos usuários.",
   text_project_ponto_digital:
     "Este projeto foi desenvolvido com o objetivo de apresentar um novo produto. Após analisar minhas habilidades de design em outros projetos anteriores, meu chefe sugeriu que criássemos um site semelhante para nossa empresa. O site segue os mesmos princípios de responsividade e web design que aprendi em um curso anteriormente mencionado. Caso tenha interesse em visualizar o código-fonte, disponibilizei-o no GitHub.",
   text_title_project_pokemon: "Projeto Pokemon",
@@ -248,6 +254,12 @@ const translations_en = {
     "During the development of this project, I gained valuable experiences in structuring systems, learning from my successes and mistakes. This journey provided me with a deep understanding of the .NET environment and left me extremely confident in my development skills.",
   text_project_odonto_3:
     "To share this work, I made the project available on GitHub. However, I have plans to commercialize it in the future, so some sensitive information in the GitHub project has been modified to protect the project.",
+  text_project_ecommerce_1:
+    "In this Projeto, the backend was built as an API using .NET Core. To manage user authentication and authorization, ASP.NET Identity was implemented along with JWT Tokens. This provided a secure and efficient way to handle registration, login, and access control.",
+  text_project_ecommerce_2:
+    "On the frontend, Angular was chosen to create a dynamic and interactive user interface. The use of Bootstrap helped ensure a responsive and appealing design, enhancing the user experience across different devices. Additionally, Redis was integrated into the application to efficiently store users' shopping carts.",
+  text_project_ecommerce_3:
+    "To process online payments, Stripe was implemented, ensuring secure transactions compliant with European security standards. Finally, the application was deployed on a Linux server, ensuring stability and scalability in production. This combination of technologies resulted in a complete and functional e-commerce platform, ready to meet the needs of users.",
   text_project_ponto_digital:
     "This project was developed with the goal of presenting a new product. After analising my design skills from previous projects, my boss suggested creating a similar website for our company. The website follows the same principles of responsiveness and web design that I learned in the previously mentioned course. If you're interested in viewing the source code, I have made it available on GitHub.",
   text_title_project_pokemon: "Pokemon project",
