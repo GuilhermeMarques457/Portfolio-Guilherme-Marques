@@ -20,10 +20,18 @@ const translations_pt = {
   title_habilities: "Tecnologias Destacadas",
   title_xp: "Experiência Profissional",
   text_xp_1:
-    "Atualmente estou empregado em uma empresa onde estou trabalhando com o desenvolvimento de software utilizando ASP.NET Razor Pages, além de integração com um aplicativo móvel utilizando o flutter. Essa oportunidade surgiu por meio da indicação do meu professor, e desde então tenho atuado como desenvolvedor nessa empresa.",
+    "Iniciei minha carreira como desenvolvedor como freelancer, assumindo a manutenção de um sistema indicado pelo meu professor. Nesse papel, liderei o desenvolvimento do sistema, ganhando autonomia e crescendo profissionalmente.",
   text_xp_2:
-    "Na empresa em que trabalho, sou responsável pela manutenção do software e também pela implementação de novas funcionalidades que meu chefe considera interessantes para o sistema. Atualmente, desfruto da autonomia de trabalhar sozinho, assumindo diversas tarefas, e quando me deparo com algum obstáculo, posso contar com a ajuda e orientação do meu professor.",
+    "Atualmente, estou empregado em uma empresa, onde faço parte de uma equipe colaborativa. Apesar de ter menos autonomia individual, esta experiência tem sido altamente eficaz para o meu crescimento, pois estou integrado a um ambiente dinâmico, contribuindo para projetos que agregam valor tangível à empresa.",
+  experience_title_1: "Desenvolvedor Web - Freelancer - (Mar 2023 - Mar 2024)",
   title_achievements: "Certificações",
+  text_experience_realth_1:
+    "Desenvolvi e mantive duas aplicações para um sistema de ponto digital, um acesso que controlava e gerava relatórios e um aplicativo mobile responsavél pelo batimento do ponto. Participei ativamente em todas as fases do desenvolvimento, da análise de requisitos à implantação e suporte pós-lançamento. Contribuí para a melhoria da experiência do usuário através da implementação de novos recursos e funcionalidades.",
+  experience_title_2: "Desenvolvedor Web - Junior - (Jan 2023 - Atual)",
+  text_experience_doctus_1:
+    "Na Doctus Tecnologia, empresa especializada em criação e gestão de software, tenho a responsabilidade de desenvolver novas funcionalidades em diversos sistemas, utilizando uma ampla gama de tecnologias.",
+  text_experience_doctus_2:
+    "Além disso, tive a oportunidade de liderar a criação de um site que replicava um aplicativo móvel do zero para um cliente nos Estados Unidos. Essa experiência internacional foi incrivelmente enriquecedora, proporcionando-me um vasto aprendizado e a oportunidade de trabalhar em um ambiente global. Sou imensamente grato pela jornada que estou percorrendo e pelas pessoas incríveis que me acompanham nesta trajetória.",
   text_achievements:
     "Ao longo da minha trajetória profissional, tive a oportunidade de obter diversos certificados que comprovam minha expertise em diferentes áreas. Todos esses certificados podem ser encontrados dentro do meu perfil do linkedin.",
   certification_title:
@@ -52,7 +60,7 @@ const translations_pt = {
   ecommerce_title:
     "Aprenda a construir um aplicativo de e-commerce com .Net Core e Angular",
   text_certifications_ecommerce_1:
-    "Um curso extenso e altamente complexo foi desenvolvido com o objetivo de guiar os participantes na criação completa de um e-commerce a partir do zero, abrangendo tanto o desenvolvimento do backend (utilizando ASP.NET Core 8 Web API) quanto do frontend (utilizando Angular 17).",
+    "Um curso extenso e altamente complexo foi desenvolvido com o objetivo da criação completa de um e-commerce a partir do zero, abrangendo tanto o desenvolvimento do backend (utilizando ASP.NET Core 8 Web API) quanto do frontend (utilizando Angular 17).",
   text_certifications_ecommerce_2:
     "Este curso expande significativamente os conceitos previamente abordados em outros cursos, elevando o nível de complexidade. Um exemplo é o aprofundamento no uso de C# generics, que anteriormente era pouco explorado. Neste curso, uma abordagem avançada é empregada, onde todo o repositório é genérico, seguindo o padrão 'specification'.",
   text_certifications_ecommerce_3:
@@ -112,7 +120,7 @@ const translations_pt = {
   text_project_ecommerce_3:
     "E para processar os pagamentos online, foi implementado o Stripe, garantindo transações seguras e compatíveis com os padrões de segurança europeus. Por fim, a aplicação foi implantada em um servidor Linux, garantindo estabilidade e escalabilidade na produção. Essa combinação de tecnologias resultou em um e-commerce completo e funcional, pronto para atender às necessidades dos usuários.",
   text_project_ponto_digital:
-    "Este projeto foi desenvolvido com o objetivo de apresentar um novo produto. Após analisar minhas habilidades de design em outros projetos anteriores, meu chefe sugeriu que criássemos um site semelhante para nossa empresa. O site segue os mesmos princípios de responsividade e web design que aprendi em um curso anteriormente mencionado. Caso tenha interesse em visualizar o código-fonte, disponibilizei-o no GitHub.",
+    "Este projeto foi desenvolvido com o objetivo de apresentar um novo produto. Após analisar minhas habilidades de design em outros projetos anteriores, meu chefe sugeriu que criássemos um site semelhante para nossa empresa. O site segue os mesmos princípios de responsividade e web design que aprendi em um curso anteriormente mencionado.",
   text_title_project_pokemon: "Projeto Pokemon",
   text_project_pokemon:
     "Este projeto marcou o início da minha carreira como desenvolvedor. Embora eu não acredite mais nas escolhas que fiz nele, tenho muito orgulho dessa experiência, pois foi a primeira vez que coloquei em prática os conhecimentos adquiridos durante meu curso na ETEC. No entanto, é importante ressaltar que muitas funcionalidades não estão operacionais, pois decidi interromper o desenvolvimento do projeto devido a outros compromissos e projetos em andamento.",
@@ -172,9 +180,18 @@ const translations_en = {
   title_habilities: "Highlighted Technologies",
   title_xp: "Professional experience",
   text_xp_1:
-    "Currently, I am employed at a company where I am working on software development using ASP.NET Razor Pages, as well as integrating with a mobile application using Flutter. This opportunity appeared through a recommendation from my professor, and since then, I have been working as a developer at this company.",
+    "Iniciated my career as a developer as a freelancer, taking over the maintenance of a system recommended by my professor. In this role, I led the development of the system, gaining autonomy and professional growth.",
   text_xp_2:
-    "At the company I work for, I am responsible for software maintenance and also for implementing new features that my boss considers interesting for the system. Currently, I enjoy the autonomy of working alone, assuming various tasks, and when I encounter any obstacles, I can call help and guidance of my professor.",
+    "Currently, I'm employed at a company, where I'm part of a collaborative team. Despite having less individual autonomy, this experience has been highly effective for my growth, as I'm integrated into a dynamic environment, contributing to projects that add tangible value to the company.",
+  experience_title_1: "Web Developer - Freelancer - (Mar 2023 - Mar 2024)",
+  title_achievements: "Certifications",
+  text_experience_realth_1:
+    "I developed and maintained two applications for a digital time clock system, one for access control and report generation, and a mobile application responsible for time clocking. I actively participated in all stages of development, from requirements analysis to deployment and post-launch support. I contributed to enhancing user experience by implementing new features and functionalities.",
+  experience_title_2: "Web Developer - Junior - (Jan 2023 - Present)",
+  text_experience_doctus_1:
+    "At Doctus Tecnologia, a company specialized in software creation and management, I am responsible for developing new functionalities across various systems, using a wide range of technologies.",
+  text_experience_doctus_2:
+    "Additionally, I had the opportunity to lead the creation of a website replicating a mobile application from scratch for a client in the United States. This international experience was incredibly amazing, providing me with extensive learning opportunities and the chance to work in a global environment. I am immensely grateful for the journey I am on, and for the incredible people accompanying me on this path.",
   title_achievements: "Certificates",
   text_achievements:
     "Throughout my professional journey, I have had the opportunity to obtain various certifications that demonstrate my expertise in different areas. All these certificates can be found on my LinkedIn profile.",
@@ -203,7 +220,7 @@ const translations_en = {
   ecommerce_title:
     "Learn to build an e-commerce app with .Net Core and Angular",
   text_certifications_ecommerce_1:
-    "A comprehensive and highly complex course has been developed with the aim of guiding participants through the complete creation of an e-commerce from scratch, covering both backend development (using ASP.NET Core 8 Web API) and frontend development (using Angular 17).",
+    "A comprehensive and highly complex course has been developed with the aim of guiding of a creation of an e-commerce from scratch, covering both backend development (using ASP.NET Core 8 Web API) and frontend development (using Angular 17).",
   text_certifications_ecommerce_2:
     "This course significantly expands upon previously covered concepts, raising the level of complexity. For example, there is a deeper dive into the use of C# generics, which was previously less explored. In this course, an advanced approach is employed where the entire repository is generic, following the 'specification' pattern.",
   text_certifications_ecommerce_3:
@@ -261,7 +278,7 @@ const translations_en = {
   text_project_ecommerce_3:
     "To process online payments, Stripe was implemented, ensuring secure transactions compliant with European security standards. Finally, the application was deployed on a Linux server, ensuring stability and scalability in production. This combination of technologies resulted in a complete and functional e-commerce platform, ready to meet the needs of users.",
   text_project_ponto_digital:
-    "This project was developed with the goal of presenting a new product. After analising my design skills from previous projects, my boss suggested creating a similar website for our company. The website follows the same principles of responsiveness and web design that I learned in the previously mentioned course. If you're interested in viewing the source code, I have made it available on GitHub.",
+    "This project was developed with the goal of presenting a new product. After analising my design skills from previous projects, my boss suggested creating a similar website for our company. The website follows the same principles of responsiveness and web design that I learned in the previously mentioned course.",
   text_title_project_pokemon: "Pokemon project",
   text_project_pokemon:
     "This project marked the beginning of my career as a developer. Although I no longer believe in the choices I made in it, I am very proud of this experience because it was the first time I put into practice the knowledge I've gained during my course at ETEC. However, it's important to note that many features are not functional as I decided to stop the development of the project due to other commitments and in development projects.",
