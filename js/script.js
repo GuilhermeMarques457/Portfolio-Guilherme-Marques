@@ -221,25 +221,25 @@ imgsProject.forEach((img) => {
   img.addEventListener("mouseenter", function (e) {
     setTimeout(() => {
       addImage(imgEl);
-    }, 100);
+    }, 400);
   });
 
   img.addEventListener("touchstart", function (e) {
     setTimeout(() => {
       addImage(imgEl);
-    }, 100);
+    }, 400);
   });
 
   img.addEventListener("mouseleave", function (e) {
     setTimeout(() => {
       removeImage(imgEl);
-    }, 100);
+    }, 400);
   });
 
   img.addEventListener("touchend", function (e) {
     setTimeout(() => {
       removeImage(imgEl);
-    }, 100);
+    }, 400);
   });
 });
 
