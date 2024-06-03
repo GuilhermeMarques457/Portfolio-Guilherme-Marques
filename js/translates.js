@@ -146,9 +146,10 @@ const translations_pt = {
     'O projeto denominado "Forkify", foi desafiador, porém incrivelmente gratificante, pois me deu a oportunidade de aplicar e consolidar todos os conhecimentos que adquiri ao longo do curso. Utilizei uma arquitetura MVC e JavaScript puro (Vanilla JS), com a compilação realizada pelo Parcel.',
   text_project_js_4:
     "Já o outro projeto chamando Mapty foi bem mais simples, um app de monitoramento de corridas e caminhadas utilizando uma API de geolocalização, no entando adquiri diversos conhecimentos na elaboração do mesmo.",
-  text_title_project_nextjs_2: "Projetos em NextJs",
+  text_title_project_nextjs_1: "Projetos em NextJs",
   text_project_nextjs_1:
     'Aqui estão alguns dos projetos que desenvolvi durante o curso "Next.js 14 & React - The Complete Guide", a realização dos mesmo me foi solicitado quando uma demanda crucial de Next.js surgiu na empresa. . Esses projetos me forneceram uma compreensão sólida de conceitos fundamentais, incluindo as duas estruturas do Next.js (pages & file routing), bem como a prática de conceitos avançados como a geração de páginas com server-side props e static props. Além disso, explorei o uso de diversas bibliotecas, como o next-auth, ampliando ainda mais meu conhecimento e habilidades em Next.js e React.',
+  text_title_project_bootstrap_1: "Projetos em Bootstrap",
   text_project_bootstrap_1:
     'Aqui estão alguns dos projetos que desenvolvi durante o curso "Bootstrap 5 From Scratch | Build 5 Modern Websites". Antes de iniciar os projetos, foram explicados todos os conceitos fundamentais do Bootstrap, incluindo utilitários, componentes e, principalmente, a personalização das variáveis do Bootstrap para obter um visual menos característico da biblioteca padrão.',
   text_project_bootstrap_2:
@@ -314,6 +315,7 @@ const translations_en = {
   text_title_project_nextjs_1: "Projects in Next.js",
   text_project_nextjs_1:
     "Here are some of the projects I developed during the 'Next.js 14 & React - The Complete Guide' course. The completion of these projects was requested when a crucial demand for Next.js arose in the company. These projects provided me with a solid understanding of fundamental concepts, including both structures of Next.js (pages & file routing), as well as the practice of advanced concepts such as generating pages with server-side props and static props. Additionally, I explored the use of various libraries, such as next-auth, further expanding my knowledge and skills in Next.js and React.",
+  text_title_project_bootstrap_1: "Projects in Bootstrap",
   text_project_bootstrap_1:
     'Here are some of the projects I developed during the course "Bootstrap 5 From Scratch | Build 5 Modern Websites". Before starting the projects, all fundamental concepts of Bootstrap were explained, including utilities, components, and especially customizing Bootstrap variables to achieve a less standard look.',
   text_project_bootstrap_2:
