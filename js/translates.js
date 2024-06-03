@@ -81,8 +81,12 @@ const translations_pt = {
     "Conceitos basícos de JavaScript como DOM, Data  Structures (Array, Maps, Sets), Functions, Arrays Methods, Dates.",
   text_certifications_javascript_3:
     "Conceitos avançados como DOOM avançado AJAX, JavaScript OOP, Modules, Parcel, JavaScript moderno.",
+  text_certifications_bootstrap_1:
+    "Apreendi todos os conceitos de boostrap com a pratica criando 5 websites bonitos e responsivos do zero usando o framework Bootstrap. Este curso é perfeito para iniciantes e para aqueles que desejam construir projetos incríveis.",
+  text_certifications_bootstrap_2:
+    "Além disso, apreendi a configurar um ambiente para compilar Sass e personalizar as variaveis do Bootstrap, criando temas alternativos tirando aquela 'cara de boostrap'. Explorei as classes, componentes e utilitários do Bootstrap usando arquivos de teste e depois criei 5 sites modernos e profissionais.",
   text_certifications_webdesign_1:
-    "  Meu primeiro curso na Udemy foi focado em Web Design. Naquela época, meu interesse era significativo nesse campo, embora meus esforços estejam atualmente direcionados para outras áreas. A experiência foi valiosa, proporcionando uma base sólida em UX/UI, apesar de minha mudança de foco, contribui para minha compreensão global no desenvolvimento.",
+    "Meu primeiro curso na Udemy foi focado em Web Design. Naquela época, meu interesse era significativo nesse campo, embora meus esforços estejam atualmente direcionados para outras áreas. A experiência foi valiosa, proporcionando uma base sólida em UX/UI, apesar de minha mudança de foco, contribui para minha compreensão global no desenvolvimento.",
   text_certifications_git_1:
     "Optei por investir em um curso de Git para aprimorar a segurança e gerenciamento de projetos. Aprendi diversos comandos essenciais, fortalecendo minha habilidade em práticas eficientes de versionamento.",
   text_certifications_git_2:
@@ -241,6 +245,10 @@ const translations_en = {
     "Basic JavaScript concepts such as DOM, Data Structures (Array, Maps, Sets), Functions, Arrays Methods, Dates.",
   text_certifications_javascript_3:
     "Advanced concepts such as Advanced DOM, AJAX, JavaScript OOP, Modules, Parcel, Modern JavaScript.",
+  text_certifications_bootstrap_1:
+    "I mastered all Bootstrap concepts through hands-on practice, building 5 beautiful and responsive websites from scratch using the Bootstrap framework. This course is perfect for beginners and those aiming to create amazing projects.",
+  text_certifications_bootstrap_2:
+    "Furthermore, I learned to set up an environment for compiling Sass and customizing Bootstrap variables, creating alternative themes to break away from the typical 'Bootstrap look'. I explored Bootstrap classes, components, and utilities using test files, and then developed 5 modern and professional websites.",
   text_certifications_webdesign_1:
     "My first Udemy course focused on Web Design. At that time, my interest in this field was significant, although my efforts are currently directed towards other areas. The experience was valuable, providing a solid foundation in UX/UI, despite my change in focus, contributing to my overall understanding of development.",
   text_certifications_git_1:
