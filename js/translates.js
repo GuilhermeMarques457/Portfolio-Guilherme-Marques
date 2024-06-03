@@ -149,6 +149,10 @@ const translations_pt = {
   text_title_project_nextjs_2: "Projetos em NextJs",
   text_project_nextjs_1:
     'Aqui estão alguns dos projetos que desenvolvi durante o curso "Next.js 14 & React - The Complete Guide", a realização dos mesmo me foi solicitado quando uma demanda crucial de Next.js surgiu na empresa. . Esses projetos me forneceram uma compreensão sólida de conceitos fundamentais, incluindo as duas estruturas do Next.js (pages & file routing), bem como a prática de conceitos avançados como a geração de páginas com server-side props e static props. Além disso, explorei o uso de diversas bibliotecas, como o next-auth, ampliando ainda mais meu conhecimento e habilidades em Next.js e React.',
+  text_project_bootstrap_1:
+    'Aqui estão alguns dos projetos que desenvolvi durante o curso "Bootstrap 5 From Scratch | Build 5 Modern Websites". Antes de iniciar os projetos, foram explicados todos os conceitos fundamentais do Bootstrap, incluindo utilitários, componentes e, principalmente, a personalização das variáveis do Bootstrap para obter um visual menos característico da biblioteca padrão.',
+  text_project_bootstrap_2:
+    "Apesar da complexidade dos projetos, eles foram desenvolvidos de forma ágil devido à facilidade de uso do Bootstrap. No total, foram três projetos concluídos rapidamente, demonstrando a eficiência da ferramenta para o desenvolvimento web.",
   text_title_project_aspnet: "Projetos em Asp.Net 7",
   text_project_aspnet_1:
     'Aqui estão alguns projetos que desenvolvi durante o meu curso de Asp.Net 7, intitulado "Asp.Net Core 7 (.NET 7) | True Ultimate Guide". Esses projetos representam um conjunto abrangente de funcionalidades que adquiri ao longo do curso.',
@@ -310,6 +314,11 @@ const translations_en = {
   text_title_project_nextjs_1: "Projects in Next.js",
   text_project_nextjs_1:
     "Here are some of the projects I developed during the 'Next.js 14 & React - The Complete Guide' course. The completion of these projects was requested when a crucial demand for Next.js arose in the company. These projects provided me with a solid understanding of fundamental concepts, including both structures of Next.js (pages & file routing), as well as the practice of advanced concepts such as generating pages with server-side props and static props. Additionally, I explored the use of various libraries, such as next-auth, further expanding my knowledge and skills in Next.js and React.",
+  text_project_bootstrap_1:
+    'Here are some of the projects I developed during the course "Bootstrap 5 From Scratch | Build 5 Modern Websites". Before starting the projects, all fundamental concepts of Bootstrap were explained, including utilities, components, and especially customizing Bootstrap variables to achieve a less standard look.',
+  text_project_bootstrap_2:
+    "Despite the complexity of the projects, they were developed quickly due to the ease of use of Bootstrap. In total, three projects were completed rapidly, demonstrating the tool's efficiency for web development.",
+
   text_title_project_aspnet: "Asp.Net 7 Projects",
   text_project_aspnet_1:
     'Here are some projects I developed during my Asp.Net 7 course, titled "Asp.Net Core 7 (.NET 7) | True Ultimate Guide". These projects represent a comprehensive set of functionalities that I acquired during the course.',
