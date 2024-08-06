@@ -128,10 +128,6 @@
     font-size: 1.7rem;
   }
 
-  .img-box-slide {
-    height: 100%;
-  }
-
   .image-me {
     top: -60px;
     height: 100%;
@@ -156,8 +152,8 @@
   }
 
   .grid {
-    row-gap: 3.6rem;
-    column-gap: 2.8rem;
+    row-gap: 0.8rem;
+    column-gap: 1.8rem;
   }
 
   .box-slide-content {
@@ -286,7 +282,8 @@
   }
 
   .box-slide-content {
-    height: 85% !important;
+    height: 90% !important;
+    margin-bottom: 2rem;
   }
 
   .box-used-technologies .subheading {
@@ -295,6 +292,19 @@
 
   .content-technolgies {
     width: 100%;
+  }
+
+  .imgs-box-twins {
+    height: 20rem !important;
+  }
+
+  .img-twin {
+    height: 100%;
+    width: auto;
+  }
+
+  .slide-content {
+    height: 32rem !important;
   }
 }
 

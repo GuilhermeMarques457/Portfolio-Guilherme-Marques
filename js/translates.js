@@ -81,8 +81,12 @@ const translations_pt = {
     "Conceitos basícos de JavaScript como DOM, Data  Structures (Array, Maps, Sets), Functions, Arrays Methods, Dates.",
   text_certifications_javascript_3:
     "Conceitos avançados como DOOM avançado AJAX, JavaScript OOP, Modules, Parcel, JavaScript moderno.",
+  text_certifications_bootstrap_1:
+    "Apreendi todos os conceitos de boostrap com a pratica criando 5 websites bonitos e responsivos do zero usando o framework Bootstrap. Este curso é perfeito para iniciantes e para aqueles que desejam construir projetos incríveis.",
+  text_certifications_bootstrap_2:
+    "Além disso, apreendi a configurar um ambiente para compilar Sass e personalizar as variaveis do Bootstrap, criando temas alternativos tirando aquela 'cara de boostrap'. Explorei as classes, componentes e utilitários do Bootstrap usando arquivos de teste e depois criei 5 sites modernos e profissionais.",
   text_certifications_webdesign_1:
-    "  Meu primeiro curso na Udemy foi focado em Web Design. Naquela época, meu interesse era significativo nesse campo, embora meus esforços estejam atualmente direcionados para outras áreas. A experiência foi valiosa, proporcionando uma base sólida em UX/UI, apesar de minha mudança de foco, contribui para minha compreensão global no desenvolvimento.",
+    "Meu primeiro curso na Udemy foi focado em Web Design. Naquela época, meu interesse era significativo nesse campo, embora meus esforços estejam atualmente direcionados para outras áreas. A experiência foi valiosa, proporcionando uma base sólida em UX/UI, apesar de minha mudança de foco, contribui para minha compreensão global no desenvolvimento.",
   text_certifications_git_1:
     "Optei por investir em um curso de Git para aprimorar a segurança e gerenciamento de projetos. Aprendi diversos comandos essenciais, fortalecendo minha habilidade em práticas eficientes de versionamento.",
   text_certifications_git_2:
@@ -142,9 +146,14 @@ const translations_pt = {
     'O projeto denominado "Forkify", foi desafiador, porém incrivelmente gratificante, pois me deu a oportunidade de aplicar e consolidar todos os conhecimentos que adquiri ao longo do curso. Utilizei uma arquitetura MVC e JavaScript puro (Vanilla JS), com a compilação realizada pelo Parcel.',
   text_project_js_4:
     "Já o outro projeto chamando Mapty foi bem mais simples, um app de monitoramento de corridas e caminhadas utilizando uma API de geolocalização, no entando adquiri diversos conhecimentos na elaboração do mesmo.",
-  text_title_project_nextjs_2: "Projetos em NextJs",
+  text_title_project_nextjs_1: "Projetos em NextJs",
   text_project_nextjs_1:
     'Aqui estão alguns dos projetos que desenvolvi durante o curso "Next.js 14 & React - The Complete Guide", a realização dos mesmo me foi solicitado quando uma demanda crucial de Next.js surgiu na empresa. . Esses projetos me forneceram uma compreensão sólida de conceitos fundamentais, incluindo as duas estruturas do Next.js (pages & file routing), bem como a prática de conceitos avançados como a geração de páginas com server-side props e static props. Além disso, explorei o uso de diversas bibliotecas, como o next-auth, ampliando ainda mais meu conhecimento e habilidades em Next.js e React.',
+  text_title_project_bootstrap_1: "Projetos em Bootstrap",
+  text_project_bootstrap_1:
+    'Aqui estão alguns dos projetos que desenvolvi durante o curso "Bootstrap 5 From Scratch | Build 5 Modern Websites". Antes de iniciar os projetos, foram explicados todos os conceitos fundamentais do Bootstrap, incluindo utilitários, componentes e, principalmente, a personalização das variáveis do Bootstrap para obter um visual menos característico da biblioteca padrão.',
+  text_project_bootstrap_2:
+    "Apesar da complexidade dos projetos, eles foram desenvolvidos de forma ágil devido à facilidade de uso do Bootstrap. No total, foram três projetos concluídos rapidamente, demonstrando a eficiência da ferramenta para o desenvolvimento web.",
   text_title_project_aspnet: "Projetos em Asp.Net 7",
   text_project_aspnet_1:
     'Aqui estão alguns projetos que desenvolvi durante o meu curso de Asp.Net 7, intitulado "Asp.Net Core 7 (.NET 7) | True Ultimate Guide". Esses projetos representam um conjunto abrangente de funcionalidades que adquiri ao longo do curso.',
@@ -241,6 +250,10 @@ const translations_en = {
     "Basic JavaScript concepts such as DOM, Data Structures (Array, Maps, Sets), Functions, Arrays Methods, Dates.",
   text_certifications_javascript_3:
     "Advanced concepts such as Advanced DOM, AJAX, JavaScript OOP, Modules, Parcel, Modern JavaScript.",
+  text_certifications_bootstrap_1:
+    "I mastered all Bootstrap concepts through hands-on practice, building 5 beautiful and responsive websites from scratch using the Bootstrap framework. This course is perfect for beginners and those aiming to create amazing projects.",
+  text_certifications_bootstrap_2:
+    "Furthermore, I learned to set up an environment for compiling Sass and customizing Bootstrap variables, creating alternative themes to break away from the typical 'Bootstrap look'. I explored Bootstrap classes, components, and utilities using test files, and then developed 5 modern and professional websites.",
   text_certifications_webdesign_1:
     "My first Udemy course focused on Web Design. At that time, my interest in this field was significant, although my efforts are currently directed towards other areas. The experience was valuable, providing a solid foundation in UX/UI, despite my change in focus, contributing to my overall understanding of development.",
   text_certifications_git_1:
@@ -302,6 +315,12 @@ const translations_en = {
   text_title_project_nextjs_1: "Projects in Next.js",
   text_project_nextjs_1:
     "Here are some of the projects I developed during the 'Next.js 14 & React - The Complete Guide' course. The completion of these projects was requested when a crucial demand for Next.js arose in the company. These projects provided me with a solid understanding of fundamental concepts, including both structures of Next.js (pages & file routing), as well as the practice of advanced concepts such as generating pages with server-side props and static props. Additionally, I explored the use of various libraries, such as next-auth, further expanding my knowledge and skills in Next.js and React.",
+  text_title_project_bootstrap_1: "Projects in Bootstrap",
+  text_project_bootstrap_1:
+    'Here are some of the projects I developed during the course "Bootstrap 5 From Scratch | Build 5 Modern Websites". Before starting the projects, all fundamental concepts of Bootstrap were explained, including utilities, components, and especially customizing Bootstrap variables to achieve a less standard look.',
+  text_project_bootstrap_2:
+    "Despite the complexity of the projects, they were developed quickly due to the ease of use of Bootstrap. In total, three projects were completed rapidly, demonstrating the tool's efficiency for web development.",
+
   text_title_project_aspnet: "Asp.Net 7 Projects",
   text_project_aspnet_1:
     'Here are some projects I developed during my Asp.Net 7 course, titled "Asp.Net Core 7 (.NET 7) | True Ultimate Guide". These projects represent a comprehensive set of functionalities that I acquired during the course.',

@@ -221,25 +221,25 @@ imgsProject.forEach((img) => {
   img.addEventListener("mouseenter", function (e) {
     setTimeout(() => {
       addImage(imgEl);
-    }, 100);
+    }, 400);
   });
 
   img.addEventListener("touchstart", function (e) {
     setTimeout(() => {
       addImage(imgEl);
-    }, 100);
+    }, 400);
   });
 
   img.addEventListener("mouseleave", function (e) {
     setTimeout(() => {
       removeImage(imgEl);
-    }, 100);
+    }, 400);
   });
 
   img.addEventListener("touchend", function (e) {
     setTimeout(() => {
       removeImage(imgEl);
-    }, 100);
+    }, 400);
   });
 });
 
@@ -499,35 +499,37 @@ technologiesImgs.forEach((elem) => {
 
 //End
 
-//////////////////////////////////
+//////////////////////////////////////////////////
 // Certification & Achivments funcionality //
-//////////////////////////////////
+//////////////////////////////////////////////////
 
-const listCertificates = document.querySelector(".list");
+const listCertificates = document.querySelectorAll(".list");
 
-listCertificates.addEventListener("click", function (e) {
-  const target = e.target.closest(".list-dropdown");
+listCertificates.forEach((list) => {
+  list.addEventListener("click", function (e) {
+    const target = e.target.closest(".list-dropdown");
 
-  if (!target.classList.contains("list-dropdown")) return;
+    if (!target.classList.contains("list-dropdown")) return;
 
-  const icon = target.querySelector(".ph");
-  const listDescription = target.querySelector(".list-description");
+    const icon = target.querySelector(".ph");
+    const listDescription = target.querySelector(".list-description");
 
-  if (target.classList.contains("opened-list")) {
-    target.classList.remove("opened-list");
-    icon.classList.add("ph-caret-down");
-    icon.classList.remove("ph-caret-up");
+    if (target.classList.contains("opened-list")) {
+      target.classList.remove("opened-list");
+      icon.classList.add("ph-caret-down");
+      icon.classList.remove("ph-caret-up");
 
-    listDescription.style.transition = "0.15s all";
+      listDescription.style.transition = "0.15s all";
 
-    listDescription.classList.add("description-not-showed");
-  } else {
-    target.classList.add("opened-list");
-    icon.classList.remove("ph-caret-down");
-    icon.classList.add("ph-caret-up");
+      listDescription.classList.add("description-not-showed");
+    } else {
+      target.classList.add("opened-list");
+      icon.classList.remove("ph-caret-down");
+      icon.classList.add("ph-caret-up");
 
-    listDescription.style.transition = "0.5s all";
+      listDescription.style.transition = "0.5s all";
 
-    listDescription.classList.remove("description-not-showed");
-  }
+      listDescription.classList.remove("description-not-showed");
+    }
+  });
 });
