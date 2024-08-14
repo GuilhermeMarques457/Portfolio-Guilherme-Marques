@@ -81,6 +81,13 @@ const translations_pt = {
     "Conceitos basícos de JavaScript como DOM, Data  Structures (Array, Maps, Sets), Functions, Arrays Methods, Dates.",
   text_certifications_javascript_3:
     "Conceitos avançados como DOOM avançado AJAX, JavaScript OOP, Modules, Parcel, JavaScript moderno.",
+  jquery_title: "Jquery - Curso Completo com Projetos Reais",
+  text_certifications_jquery_1:
+    "Decidi realizar um curso focado em jQuery para aprofundar meus conhecimentos e aumentar minha confiança no uso dessa tecnologia. O jQuery é amplamente utilizado no ambiente onde trabalho, especialmente em conjunto com ASP.NET, e esse curso tem sido fundamental para melhorar minhas habilidades práticas no desenvolvimento de aplicações web.",
+  text_certifications_jquery_2:
+    "Conceitos basícos de jQuery como seletores, manipulação de DOM, eventos e animações.",
+  text_certifications_jquery_3:
+    "Conceitos avançados como AJAX, criação de plugins dinâmicos, select2 e Projetos com Jquery.",
   text_certifications_bootstrap_1:
     "Apreendi todos os conceitos de boostrap com a pratica criando 5 websites bonitos e responsivos do zero usando o framework Bootstrap. Este curso é perfeito para iniciantes e para aqueles que desejam construir projetos incríveis.",
   text_certifications_bootstrap_2:
@@ -244,12 +251,19 @@ const translations_en = {
     "Not only did I acquire essential Docker skills, but I also explored Kubernetes as an additional bonus.",
   text_certifications_docker_3:
     "Docker concepts such as Containers, Images, Volumes, Networks, Docker Compose, Containerization of Microservices ASP.NET WEB API with various databases (SQL Server, MongoDB, Redis, PostgreSQL)",
+  jquery_title: "jQuery - Complete Course with Real Projects",
   text_certifications_javascript_1:
     "An extensive and in-depth course that allowed me to reach almost a professional level in JavaScript. Throughout the course, I explored a variety of essential concepts and participated in the creation of amazing projects, significantly enhancing my language skills and preparing me for complex challenges in web development.",
   text_certifications_javascript_2:
     "Basic JavaScript concepts such as DOM, Data Structures (Array, Maps, Sets), Functions, Arrays Methods, Dates.",
   text_certifications_javascript_3:
     "Advanced concepts such as Advanced DOM, AJAX, JavaScript OOP, Modules, Parcel, Modern JavaScript.",
+  text_certifications_jquery_1:
+    "I decided to take a course focused on jQuery to deepen my knowledge and increase my confidence in using this technology. jQuery is widely used in the environment where I work, especially in combination with ASP.NET, and this course has been essential in improving my practical skills in web application development.",
+  text_certifications_jquery_2:
+    "Basic concepts of jQuery such as selectors, DOM manipulation, events, and animations.",
+  text_certifications_jquery_3:
+    "Advanced concepts such as AJAX, dynamic plugin creation, select2, and jQuery Projects.",
   text_certifications_bootstrap_1:
     "I mastered all Bootstrap concepts through hands-on practice, building 5 beautiful and responsive websites from scratch using the Bootstrap framework. This course is perfect for beginners and those aiming to create amazing projects.",
   text_certifications_bootstrap_2:
